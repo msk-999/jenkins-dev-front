@@ -19,7 +19,7 @@ import layer16 from "../img/Rectangle 236StaffAug.svg";
 
 const Home = () => {
   return (
-    <div className="landing-page my-5">
+    <div className="landing-page my-3">
       <section className="hero-section">
         <div className="container my-5">
           <div className="row pt-5">
@@ -34,7 +34,7 @@ const Home = () => {
               </p>
               <div className="row">
                 <div className="col">
-                  <button type="button" class="btn btn-outline-dark">
+                  <button type="button" className="btn btn-outline-dark">
                     Let's get started
                   </button>
                 </div>
@@ -58,7 +58,7 @@ const Home = () => {
               development, mobile app development, and digital sustainability to
               help you establish leadership in your industry
             </h5>
-            <div className="row gap-2">
+            <div className="row gap-2 justify-content-center">
               <div className="col-sm-2 border rounded">
                 <img
                   src={layer1}
@@ -121,7 +121,7 @@ const Home = () => {
               existing IT department can significantly help you achieve
               company’s strategic objectives, quickly.
             </p>
-            <div className="row justify-content-around pt-5 gap-2">
+            <div className="row justify-content-center pt-5 gap-5">
               <div className="col-sm-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
                 <img src={layer6} alt="ims1" className="img-fluid" />
                 <h6>Hassle-free management of IT infrastructure</h6>
@@ -170,8 +170,10 @@ const Home = () => {
                 Our Skeletos Pentagon Framework for DevOps helps you achieve the
                 five-point agenda of the modern enterprises.
               </p>
-              <div className="p-4">
-                <img src={layer9} alt="devops" className="img-fluid" />
+              <div className="row justify-content-center">
+                <div className="col-10 p-4">
+                  <img src={layer9} alt="devops" className="img-fluid" />
+                </div>
               </div>
               <p>
                 Skeletos DevOps administrators & engineers work closely with
@@ -239,7 +241,7 @@ const Home = () => {
                 Customized Solutions with strategic approach & industry-specific
                 design strategy​
               </h5>
-              <div className="row">
+              <div className="row py-4">
                 <div className="col-4">
                   <img
                     src={layer13}

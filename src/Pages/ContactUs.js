@@ -17,6 +17,8 @@ const ContactUs = () => {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [coverLetter, setCoverLetter] = useState("");
+  const [coverLetterError, setCoverLetterError] = useState("");
 
   const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
   const contactPhoneRegex = /^\+?\d{10,14}$/;
@@ -24,7 +26,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !phone || !email) {
+    if (!name || !phone || !email || !coverLetter) {
       alert("Please fill out all the fields");
       return;
     }
@@ -84,11 +86,20 @@ const ContactUs = () => {
     }
   };
 
+  const handleCoverLetterChange = (e) => {
+    setCoverLetter(e.target.value);
+    if (!e.target.value) {
+      setCoverLetterError("Details are required to connect");
+    } else {
+      setCoverLetterError("");
+    }
+  };
+
   return (
     <div>
-      <div className="container">
+      <div className="container my-5">
         <div className="row d-flex justify-content-center ">
-          <div className="card col-9 m-5">
+          <div className="card shadow col-9 m-5">
             <div className="row align-items-center p-2">
               <div className="col-6">
                 <h2 className="pb-3">Get in Touch</h2>
@@ -137,6 +148,23 @@ const ContactUs = () => {
                       {emailError}
                     </Form.Control.Feedback>
                   </Form.Group>
+
+                  <Form.Group className="mb-2" controlId="formCoverLetter">
+                    <Form.Label>Tell us your Requirements</Form.Label>
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      placeholder="Enter your requirements"
+                      required
+                      value={coverLetter}
+                      onChange={handleCoverLetterChange}
+                      // isInvalid={!!coverLetterError}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {coverLetterError}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+
                   <Button
                     type="submit"
                     variant="outline-dark"

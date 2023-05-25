@@ -1,52 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Form, Button } from "react-bootstrap";
-import { API_ENDPOINT } from "../config";
 
 function Apply() {
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [coverLetter, setCoverLetter] = useState("");
-  const [files, setFiles] = useState(null);
+  const [documents, setDocuments] = useState(null);
   const [nameError, setNameError] = useState("");
-  const [phoneError, setPhoneError] = useState("");
+  const [numberError, setNumberError] = useState("");
   const [emailError, setEmailError] = useState("");
-  const [filesError, setFilesError] = useState("");
+  const [documentsError, setDocumentsError] = useState("");
   const [coverLetterError, setCoverLetterError] = useState("");
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !phone || !email || !coverLetter || !files) {
+    if (!name || !number || !email || !coverLetter || !documents) {
       alert("Please fill out all the fields");
       return;
     }
     // handle form submission
-    const { name, phone, email, coverLetter, files } = formData;
-    const formDataToSend = new URLSearchParams();
-    formDataToSend.append("name", name);
-    formDataToSend.append("phone", phone);
-    formDataToSend.append("email", email);
-    formDataToSend.append("coverLetter", coverLetter);
-    formDataToSend.append("files", files);
   };
-
-  fetch(API_ENDPOINT + "/job-application", {
-    method: "POST",
-    body: formDataToSend,
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert("Application submitted successfully!");
-      } else {
-        throw new Error(
-          "Error submitting application. Please try again later."
-        );
-      }
-    })
-    .catch((error) => {
-      alert(error.message);
-    });
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -57,12 +33,12 @@ function Apply() {
     }
   };
 
-  const handlePhoneChange = (e) => {
-    setPhone(e.target.value);
+  const handleNumberChange = (e) => {
+    setNumber(e.target.value);
     if (!e.target.validity.valid) {
-      setPhoneError("Please enter a valid 10-digit phone phone");
+      setNumberError("Please enter a valid 10-digit phone number");
     } else {
-      setPhoneError("");
+      setNumberError("");
     }
   };
 
@@ -75,6 +51,7 @@ function Apply() {
     }
   };
 
+
   const handleCoverLetterChange = (e) => {
     setCoverLetter(e.target.value);
     if (!e.target.value) {
@@ -84,8 +61,8 @@ function Apply() {
     }
   };
 
-  const handleFilesChange = (e) => {
-    setFiles(e.target.files[0]);
+  const handleDocumentsChange = (e) => {
+    setDocuments(e.target.files[0]);
     if (
       e.target.files[0] &&
       ![
@@ -94,9 +71,9 @@ function Apply() {
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       ].includes(e.target.files[0].type)
     ) {
-      setFilesError("Please upload a PDF, DOC, or DOCX file");
+      setDocumentsError("Please upload a PDF, DOC, or DOCX file");
     } else {
-      setFilesError("");
+      setDocumentsError("");
     }
   };
 
@@ -142,17 +119,17 @@ function Apply() {
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="contactNo">
-                    <Form.Label>Contact Phone:</Form.Label>
+                    <Form.Label>Contact Number:</Form.Label>
                     <Form.Control
-                      type="phone"
+                      type="number"
                       placeholder="Enter your phone number"
                       required
-                      isInvalid={!!phoneError}
-                      value={phone}
-                      onChange={handlePhoneChange}
+                      isInvalid={!!numberError}
+                      value={number}
+                      onChange={handleNumberChange}
                     />
                     <Form.Control.Feedback type="invalid">
-                      {phoneError}
+                      {numberError}
                     </Form.Control.Feedback>
                   </Form.Group>
 
@@ -187,17 +164,17 @@ function Apply() {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  <Form.Group controlId="formFiles" className="mb-3">
-                    <Form.Label>Upload Files</Form.Label>
+                  <Form.Group controlId="formDocuments" className="mb-3">
+                    <Form.Label>Upload Documents</Form.Label>
                     <Form.Control
                       type="file"
                       accept=".pdf,.doc,.docx"
                       required
-                      onChange={handleFilesChange}
-                      isInvalid={!!filesError}
+                      onChange={handleDocumentsChange}
+                      isInvalid={!!documentsError}
                     />
                     <Form.Control.Feedback type="invalid">
-                      {filesError}
+                      {documentsError}
                     </Form.Control.Feedback>
                   </Form.Group>
 
