@@ -17,8 +17,8 @@ const ContactUs = () => {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
-  const [coverLetter, setCoverLetter] = useState("");
-  const [coverLetterError, setCoverLetterError] = useState("");
+  const [requirements, setRequirements] = useState("");
+  const [requirementsError, setRequirementsError] = useState("");
 
   const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
   const contactPhoneRegex = /^\+?\d{10,14}$/;
@@ -26,13 +26,13 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !phone || !email || !coverLetter) {
+    if (!name || !phone || !email || !requirements) {
       alert("Please fill out all the fields");
       return;
     }
     fetch(API_ENDPOINT + "/users/create", {
       method: "POST",
-      body: JSON.stringify({ name, phone, email }),
+      body: JSON.stringify({ name, phone, email, requirements }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -50,6 +50,7 @@ const ContactUs = () => {
     setName("");
     setPhone("");
     setEmail("");
+    setRequirements("");
     // handle form submission
   };
 
@@ -86,12 +87,12 @@ const ContactUs = () => {
     }
   };
 
-  const handleCoverLetterChange = (e) => {
-    setCoverLetter(e.target.value);
+  const handleRequirementsChange = (e) => {
+    setRequirements(e.target.value);
     if (!e.target.value) {
-      setCoverLetterError("Details are required to connect");
+      setRequirementsError("Details are required to connect");
     } else {
-      setCoverLetterError("");
+      setRequirementsError("");
     }
   };
 
@@ -101,7 +102,7 @@ const ContactUs = () => {
         <div className="row d-flex justify-content-center ">
           <div className="card shadow col-9 m-5">
             <div className="row align-items-center p-2">
-              <div className="col-6">
+              <div className="col-md-6">
                 <h2 className="pb-3">Get in Touch</h2>
                 <Form onSubmit={handleSubmit} className="col-10">
                   <Form.Group className="mb-2" controlId="formName">
@@ -149,19 +150,19 @@ const ContactUs = () => {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  <Form.Group className="mb-2" controlId="formCoverLetter">
+                  <Form.Group className="mb-2" controlId="formRequirements">
                     <Form.Label>Tell us your Requirements</Form.Label>
                     <Form.Control
                       as="textarea"
                       rows={3}
                       placeholder="Enter your requirements"
                       required
-                      value={coverLetter}
-                      onChange={handleCoverLetterChange}
-                      // isInvalid={!!coverLetterError}
+                      value={requirements}
+                      onChange={handleRequirementsChange}
+                      isInvalid={!!requirementsError}
                     />
                     <Form.Control.Feedback type="invalid">
-                      {coverLetterError}
+                      {requirementsError}
                     </Form.Control.Feedback>
                   </Form.Group>
 
@@ -175,7 +176,7 @@ const ContactUs = () => {
                 </Form>
               </div>
 
-              <div className="col-6">
+              <div className="col-md-6">
                 <div className="row">
                   <div className="col text-center">
                     <img

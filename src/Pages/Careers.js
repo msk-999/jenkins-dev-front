@@ -9,7 +9,7 @@ const Careers = () => {
   return (
     <div>
       <Container className="my-5">
-        <div className="row text-center align-items-center">
+        <div className="row text-center py-4 align-items-center">
           <div className="col-sm-6">
             <h1>Careers</h1>
           </div>
@@ -18,7 +18,7 @@ const Careers = () => {
           </div>
         </div>
 
-        <Row className="py-5">
+        <Row className="py-5 justify-content-center">
           <Row className="d-flex justify-content-center">
             <Col xs={12} md={4}>
               <Card className="mb-3 shadow p-2 text-center">

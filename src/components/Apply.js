@@ -1,26 +1,51 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Form, Button } from "react-bootstrap";
+import { API_ENDPOINT } from "../config";
 
 function Apply() {
   const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [coverLetter, setCoverLetter] = useState("");
   const [documents, setDocuments] = useState(null);
   const [nameError, setNameError] = useState("");
-  const [numberError, setNumberError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [documentsError, setDocumentsError] = useState("");
   const [coverLetterError, setCoverLetterError] = useState("");
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !number || !email || !coverLetter || !documents) {
+    if (!name || !phone || !email || !coverLetter || !documents) {
       alert("Please fill out all the fields");
       return;
     }
+    let formData = new FormData();
+    formData.append("name", name);
+    formData.append("phone", phone);
+    formData.append("email", email);
+    formData.append("coverLetter", coverLetter);
+    formData.append("files", documents);
+    fetch(API_ENDPOINT + "/job-application", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        // Do something with the response data
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    // Reset the form fields
+    setName("");
+    setPhone("");
+    setEmail("");
+    setCoverLetter("");
+    setDocuments("");
     // handle form submission
   };
 
@@ -33,12 +58,12 @@ function Apply() {
     }
   };
 
-  const handleNumberChange = (e) => {
-    setNumber(e.target.value);
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
     if (!e.target.validity.valid) {
-      setNumberError("Please enter a valid 10-digit phone number");
+      setPhoneError("Please enter a valid 10-digit phone number");
     } else {
-      setNumberError("");
+      setPhoneError("");
     }
   };
 
@@ -50,7 +75,6 @@ function Apply() {
       setEmailError("");
     }
   };
-
 
   const handleCoverLetterChange = (e) => {
     setCoverLetter(e.target.value);
@@ -119,17 +143,17 @@ function Apply() {
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="contactNo">
-                    <Form.Label>Contact Number:</Form.Label>
+                    <Form.Label>Contact Phone:</Form.Label>
                     <Form.Control
                       type="number"
                       placeholder="Enter your phone number"
                       required
-                      isInvalid={!!numberError}
-                      value={number}
-                      onChange={handleNumberChange}
+                      isInvalid={!!phoneError}
+                      value={phone}
+                      onChange={handlePhoneChange}
                     />
                     <Form.Control.Feedback type="invalid">
-                      {numberError}
+                      {phoneError}
                     </Form.Control.Feedback>
                   </Form.Group>
 
