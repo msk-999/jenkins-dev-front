@@ -1,5 +1,6 @@
 import React from "react";
 import icon from "../img/Skeletos_icon.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,8 +8,10 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 d-flex align-items-between">
-            <div className="col-6">
-              <img src={icon} alt="Company Logo" className="img-fluid mr-3" />
+            <div className="row justify-content-center">
+              <div className="col-6">
+                <img src={icon} alt="Company Logo" className="img-fluid mr-3" />
+              </div>
             </div>
             <div className="col-6">
               <h5>About Us</h5>
@@ -19,16 +22,24 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#">Home</a>
+                <Link to="/" className="text-decoration-none">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#">Abous Us</a>
+                <Link to="/about" className="text-decoration-none">
+                  Abous Us
+                </Link>
               </li>
               <li>
-                <a href="#">Services</a>
+                <Link to="/careers" className="text-decoration-none">
+                  Careers
+                </Link>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <Link to="/contact" className="text-decoration-none">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -40,9 +51,6 @@ const Footer = () => {
                 Road, Near Pastry Corner, Nal Stop, Erandwane, India, MH, Pune:
                 411004
               </li>
-              <li>Anytown, USA 12345</li>
-              <li>Phone: (91) 123-456-7890</li>
-              <li>info@skeletos.io</li>
             </ul>
           </div>
         </div>

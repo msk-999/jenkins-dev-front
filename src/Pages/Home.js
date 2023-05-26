@@ -16,6 +16,7 @@ import layer13 from "../img/brand1Rectangle 229.svg";
 import layer14 from "../img/brand2Rectangle 230.svg";
 import layer15 from "../img/brand3Rectangle 231.svg";
 import layer16 from "../img/Rectangle 236StaffAug.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -34,9 +35,11 @@ const Home = () => {
               </p>
               <div className="row">
                 <div className="col">
-                  <button type="button" className="btn btn-outline-dark">
-                    Let's get started
-                  </button>
+                  <Link to="/contact">
+                    <button type="button" className="btn btn-outline-dark">
+                      Let's get started
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
