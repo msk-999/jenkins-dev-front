@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Container, Form, Button } from "react-bootstrap";
 import { API_ENDPOINT } from "../config";
@@ -14,6 +14,7 @@ function Apply() {
   const [emailError, setEmailError] = useState("");
   const [documentsError, setDocumentsError] = useState("");
   const [coverLetterError, setCoverLetterError] = useState("");
+  const fileInputRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,19 +35,20 @@ function Apply() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        // Do something with the response data
+        // Reset the form fields
+        setName("");
+        setPhone("");
+        setEmail("");
+        setCoverLetter("");
+        setDocuments(null);
+        // Reset the file input field
+        if (fileInputRef.current) {
+          fileInputRef.current.value = null;
+        }
       })
       .catch((error) => {
         console.error(error);
       });
-
-    // Reset the form fields
-    setName("");
-    setPhone("");
-    setEmail("");
-    setCoverLetter("");
-    setDocuments("");
-    // handle form submission
   };
 
   const handleNameChange = (e) => {
@@ -191,6 +193,7 @@ function Apply() {
                   <Form.Group controlId="formDocuments" className="mb-3">
                     <Form.Label>Upload Documents</Form.Label>
                     <Form.Control
+                      ref={fileInputRef} // Attach the ref to the file input field
                       type="file"
                       accept=".pdf,.doc,.docx"
                       required

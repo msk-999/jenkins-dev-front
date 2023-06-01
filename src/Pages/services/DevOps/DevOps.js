@@ -4,13 +4,28 @@ import layer2 from "../../../img/devops/DevOps-2.png";
 import layer3 from "../../../img/DevOps-Group.svg";
 import layer4 from "../../../img/devops/Skeletos-provides-end-to-end-DevOps-solutions.png";
 import layer5 from "../../../img/devops/04-INTERNAL-DevOps-06-1-768x286.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
+import { faBug } from "@fortawesome/free-solid-svg-icons";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faBezierCurve } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
+import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
+import { faFileContract } from "@fortawesome/free-solid-svg-icons";
+import { faForward } from "@fortawesome/free-solid-svg-icons";
+import { faUsersGear } from "@fortawesome/free-solid-svg-icons";
+import { faPiggyBank } from "@fortawesome/free-solid-svg-icons";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { faWaveSquare } from "@fortawesome/free-solid-svg-icons";
 
 const devops = () => {
   return (
     <div>
       <div className="container text-center my-5">
         <div className="row align-items-center py-4">
-          <div className="col-md-6">
+          <div className="col-md-6 text-start">
             <h2 className="fw-bold">DevOps</h2>
             <h5>Synergystically Building Sustainable Enterprises</h5>
           </div>
@@ -38,7 +53,7 @@ const devops = () => {
           <div className="col">
             <div className="row my-3">
               <row className="col">
-                <img src={layer2} alt="" />
+                <img src={layer2} alt="" className="img-fluid"/>
               </row>
             </div>
           </div>
@@ -54,13 +69,13 @@ const devops = () => {
         </div>
 
         <div className="row my-4">
-          <h3 className="fw-bold">
+          <h3 className="fw-bold text-secondary">
             Build Stronger Enterprise with Skeletos DevOps Framework
           </h3>
           <div className="col">
-            <div className="row justify-content-center">
-              <div className="col py-5">
-                <img src={layer3} alt="devops" />
+            <div className="row justify-content-center py-5">
+              <div className="col-10">
+                <img src={layer3} alt="devops" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -72,10 +87,14 @@ const devops = () => {
         </div>
 
         <div className="row my-4">
-          <h3 className="fw-bold">CI/CD</h3>
+          <h3 className="fw-bold text-secondary">CI/CD</h3>
           <div className="col">
             <h4>Skeletos provides end-to-end DevOps solutions.</h4>
-            <img src={layer4} alt="" className="py-3"/>
+            <div className="row justify-content-center">
+              <div className="co-10">
+                <img src={layer4} alt="" className="py-3 img-fluid" />
+              </div>
+            </div>
           </div>
           <h5 className="py-3 fw-normal">
             This includes providing unbiased consultation on the right platforms
@@ -84,7 +103,7 @@ const devops = () => {
         </div>
 
         <div className="row my-4">
-          <h3 className="fw-bold">Tool Chain</h3>
+          <h3 className="fw-bold text-secondary">Tool Chain</h3>
           <p className="py-3">
             Right tools aren’t enough. Our experts undertake configuration
             management, automated continuous integration and deployment services
@@ -92,7 +111,11 @@ const devops = () => {
             and then the production server.
           </p>
           <div className="col">
-            <img src={layer5} alt="" />
+            <div className="row justify-content-center">
+              <div className="col">
+                <img src={layer5} alt="" className="img-fluid" />
+              </div>
+            </div>
           </div>
           <p className="py-3">
             SKELETOS DevOps administrators & engineers work closely with your
@@ -102,10 +125,181 @@ const devops = () => {
           </p>
         </div>
 
-        <div className="row">
-          <h2>Skeletos DevOps Features & Benefits</h2>
-          <div className="col-md-6"></div>
-          <div className="col-md-6"></div>
+        <h2 className="text-secondary py-3">Skeletos DevOps Features & Benefits</h2>
+        <div className="row justify-content-center border shadow rounded p-2">
+          <div className="col-md-6">
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faLayerGroup}
+                  size="xl"
+                  className="text-success"
+                />
+              </div>
+              <div className="col-9">
+                <p>Proven Expertise with successful DevOps Projects</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faThumbsUp}
+                  className="text-info"
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Better Accountability & Total Transparency</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faCheck}
+                  style={{ color: "#a88bbc" }}
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Proactive Issue Resolution</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faChartColumn}
+                  className="text-warning"
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Root-cause Analysis rather than quick-fix approach</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faFileContract}
+                  className="text-danger"
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Weekly, Monthly, Quarterly and Annual reports</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faDesktop}
+                  size="xl"
+                  className="text-success"
+                />
+              </div>
+              <div className="col-9">
+                <p>Annual 24x7 Monitoring with 100% SLA fulfilment</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faWaveSquare}
+                  className="text-info"
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Automation for quick, consistent and reliable builds</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faBug}
+                  style={{ color: "#a88bbc" }}
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Early bug detection</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faBezierCurve}
+                  size="xl"
+                  className="text-warning"
+                />
+              </div>
+              <div className="col">
+                <p>Continuous deployment for better TTM</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faChartLine}
+                  size="xl"
+                  className="text-danger"
+                />
+              </div>
+              <div className="col-9">
+                <p>Improved Scalability</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faUserAstronaut}
+                  className="text-success"
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Response Automation</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faForward}
+                  size="xl"
+                  className="text-info"
+                />
+              </div>
+              <div className="col-9">
+                <p>Faster Product Maturity</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faUsersGear}
+                  size="xl"
+                  style={{ color: "#a88bbc" }}
+                />
+              </div>
+              <div className="col-9">
+                <p>Seamless upgradation for end-users</p>
+              </div>
+            </div>
+            <div className="row text-start">
+              <div className="col-1">
+                <FontAwesomeIcon
+                  icon={faPiggyBank}
+                  className="text-warning"
+                  size="xl"
+                />
+              </div>
+              <div className="col-9">
+                <p>Substantially reduces cost and time</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
