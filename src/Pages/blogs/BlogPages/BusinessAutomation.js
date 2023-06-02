@@ -3,8 +3,12 @@ import Layer1 from "../../../img/blogs/blog29.png";
 import Layer2 from "../../../img/blogs/blog29_automation.jpeg";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const BusinessAutomation = () => {
+  TabTitle(
+    "How Business Automation Can Protect Your Business | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -46,7 +50,8 @@ const BusinessAutomation = () => {
                 <img src={Layer2} alt="" className="img-fluid" />
               </div>
             </div>
-            <span className="fw-bold">Save Time</span><br />
+            <span className="fw-bold">Save Time</span>
+            <br />
             When your business is automated then you don’t require technical all
             the all-time to solve some issue. Many issues can be addressed and
             solved without a visit. If you think from a long point of view then

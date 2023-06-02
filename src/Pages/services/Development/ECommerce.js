@@ -10,8 +10,10 @@ import {
 import layer1 from "../../../img/softdev/e-commerce.png";
 import layer2 from "../../../img/softdev/STRATEGY-1.png";
 import DigiMarketing from "../../../components/DigiMarketing";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ECommerce = () => {
+  TabTitle("E-commerce Development | Skeletos");
   return (
     <div>
       <div className="container text-center my-5">

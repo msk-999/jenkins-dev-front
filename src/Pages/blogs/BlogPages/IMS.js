@@ -1,8 +1,10 @@
 import React from "react";
 import Layer1 from "../../../img/blogs/blog8.png";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const IMS = () => {
+  TabTitle("What is IMS? | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

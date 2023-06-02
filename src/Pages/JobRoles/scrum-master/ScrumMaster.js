@@ -1,7 +1,9 @@
 import React from "react";
 import Apply from "../../../components/Apply";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ScrumMaster = () => {
+  TabTitle("Scrum Master | Skeletos IT Services");
   return (
     <>
       <div className="container my-5">

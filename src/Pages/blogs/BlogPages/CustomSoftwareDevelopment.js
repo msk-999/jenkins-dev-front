@@ -1,8 +1,12 @@
 import React from "react";
 import Layer1 from "../../../img/blogs/blog7.jpg";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const CustomSoftwareDevelopment = () => {
+  TabTitle(
+    "5 Reasons Why You Should Invest In Custom Software Development? | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

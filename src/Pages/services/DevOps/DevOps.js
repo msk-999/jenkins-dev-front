@@ -19,8 +19,10 @@ import { faUsersGear } from "@fortawesome/free-solid-svg-icons";
 import { faPiggyBank } from "@fortawesome/free-solid-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faWaveSquare } from "@fortawesome/free-solid-svg-icons";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const devops = () => {
+  TabTitle("DevOps | Skeletos");
   return (
     <div>
       <div className="container text-center my-5">
@@ -53,7 +55,7 @@ const devops = () => {
           <div className="col">
             <div className="row my-3">
               <row className="col">
-                <img src={layer2} alt="" className="img-fluid"/>
+                <img src={layer2} alt="" className="img-fluid" />
               </row>
             </div>
           </div>
@@ -125,7 +127,9 @@ const devops = () => {
           </p>
         </div>
 
-        <h2 className="text-secondary py-3">Skeletos DevOps Features & Benefits</h2>
+        <h2 className="text-secondary py-3">
+          Skeletos DevOps Features & Benefits
+        </h2>
         <div className="row justify-content-center border shadow rounded p-2">
           <div className="col-md-6">
             <div className="row text-start">

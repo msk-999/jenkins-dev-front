@@ -31,7 +31,7 @@ function MyNavbar() {
         {/* <Navbar.Collapse id="basic-navbar-nav" expanded={expanded}> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <div className="col-8 text-center">
+          <div className="col text-center">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link to="/" className="nav-link active">
@@ -41,11 +41,6 @@ function MyNavbar() {
               <li className="nav-item">
                 <Link to="/about" className="nav-link active">
                   About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link active">
-                  Contact Us
                 </Link>
               </li>
               <li className="nav-item">
@@ -121,6 +116,11 @@ function MyNavbar() {
                   </NavDropdown>
                 </NavDropdown.Item>
               </NavDropdown>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link active">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </Navbar.Collapse>

@@ -3,8 +3,10 @@ import Layer1 from "../../../img/blogs/blog37.jpg";
 import Layer2 from "../../../img/blogs/blog37_img.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const WebApplication = () => {
+  TabTitle("What Web Applications Do? | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

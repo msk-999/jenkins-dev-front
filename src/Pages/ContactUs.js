@@ -9,8 +9,10 @@ import layer27 from "../img/Evaluate.svg";
 import layer28 from "../img/KickStart.svg";
 import { Form, Button } from "react-bootstrap";
 import { API_ENDPOINT } from "../config";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const ContactUs = () => {
+  TabTitle("Contact us | Skeletos");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

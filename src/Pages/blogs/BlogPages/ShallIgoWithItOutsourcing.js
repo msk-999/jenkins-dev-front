@@ -2,8 +2,10 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog2.jpg";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ShallIgoWithItOutsourcing = () => {
+  TabTitle("Shall I Go With IT Outsourcing? | Skeletos IT Services");
   return (
     <div>
       <div className="container text-center my-5">

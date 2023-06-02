@@ -4,8 +4,10 @@ import JobRoles from "../components/JobRoles";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const Careers = () => {
+  TabTitle("Careers | Skeletos");
   return (
     <div>
       <Container className="my-5">

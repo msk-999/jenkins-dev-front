@@ -4,8 +4,10 @@ import Layer2 from "../../../img/blogs/blog30_img1.png";
 import Layer3 from "../../../img/blogs/blog30_img2.png";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ITOutsourcing = () => {
+  TabTitle("Why IT Outsourcing ? | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

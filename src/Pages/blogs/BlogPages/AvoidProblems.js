@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog33.jpg";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const AvoidProblems = () => {
+  TabTitle(
+    "How To Avoid Common Problems In Software Development | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -50,7 +54,8 @@ const AvoidProblems = () => {
                 technology and stand out remarkable in the market. If you’re not
                 being updated with technology then it might get difficult to use
                 your software properly, and enhance operations, so be updated
-                with the advanced technology with IT experts. <br /><br />
+                with the advanced technology with IT experts. <br />
+                <br />
                 <li className="h6 fw-bold">Growing Demand</li>We all know that
                 software’s are designed in a particular way by experts and it
                 fulfilled various demand of us and our customers. As Demand
@@ -58,14 +63,16 @@ const AvoidProblems = () => {
                 features to your software. It will avoid unwanted problems and
                 satisfy customers. These will be very easy with Skeletos IT
                 experts. We understand your needs and make customized changes
-                whenever it is required with our experts. <br /><br />
+                whenever it is required with our experts. <br />
+                <br />
                 <li className="h6 fw-bold">Time Restriction</li>Software must be
                 developed in a particular timeframe but when you’re dealing with
                 international clients managing time gets a bit complicated due
                 to different Timings. Having a different schedule may lose
                 productivity at work. A developer may work under pressure to
                 meet the expectation level and find it very hard to complete its
-                task in a particular timeframe. <br /><br />
+                task in a particular timeframe. <br />
+                <br />
                 <li className="h6 fw-bold">Bounded Infrastructure</li>If you
                 want to execute your project properly then you might need some
                 extra resources and IT infrastructures. You need
@@ -73,7 +80,8 @@ const AvoidProblems = () => {
                 If you’re, not able to full file that, Then it directly gets
                 affected to the performance of employees. Many organizations
                 don’t have them and they outsource them. It saves up to 60 % of
-                the time and automatically improves their productivity. <br /><br />
+                the time and automatically improves their productivity. <br />
+                <br />
                 <li className="h6 fw-bold">Clashes Between Teams</li>There are
                 many chances that clashes will happen between the software
                 development team and Testing teams. It mostly happened because
@@ -84,10 +92,13 @@ const AvoidProblems = () => {
               </ol>
               <br />
               Well, if you implement a software development company then these
-              problems can be avoided. <Link to="/devops" className="text-decoration-none">DevOps</Link> is the
-              best solution for all these problems. DevOps teams will be able to
-              solve all the problems, help you to adopt cloud infrastructure and
-              new updates.
+              problems can be avoided.{" "}
+              <Link to="/devops" className="text-decoration-none">
+                DevOps
+              </Link>{" "}
+              is the best solution for all these problems. DevOps teams will be
+              able to solve all the problems, help you to adopt cloud
+              infrastructure and new updates.
             </p>
           </div>
         </div>

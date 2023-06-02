@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog34.jpg";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ItInfrastructureManagement = () => {
+  TabTitle(
+    "Sneaky Way For IT Infrastructure Management | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -77,7 +81,9 @@ const ItInfrastructureManagement = () => {
               things will help you to maintain all your Business Technology be
               updated but If you are willing to Enhance your Business and are
               ready to take it to another level then{" "}
-              <Link to="/contact" className="text-decoration-none text-info">Click Here</Link>
+              <Link to="/contact" className="text-decoration-none text-info">
+                Click Here
+              </Link>
             </ul>
           </div>
         </div>

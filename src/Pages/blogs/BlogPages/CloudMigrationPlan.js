@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog16.jpg";
 import Layer2 from "../../../img/blogs/blog16_cloudMigration.png";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const CloudMigrationPlan = () => {
+  TabTitle(
+    "How To Make An Effortless Cloud Migration Plan | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

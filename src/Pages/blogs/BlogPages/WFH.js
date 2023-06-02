@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog25.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const WFH = () => {
+  TabTitle(
+    "Are You In Battle Of Work From Home And Work From Office? Here Are 5 Pros And Cons | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -93,7 +97,8 @@ const WFH = () => {
                 family function, you will be able to manage both at one time.{" "}
                 <br />
                 This might cause less focus on a scheduled task.
-              </ol><br />
+              </ol>
+              <br />
               <ul>
                 <h5>Facts about Work From Home</h5>
                 <li>

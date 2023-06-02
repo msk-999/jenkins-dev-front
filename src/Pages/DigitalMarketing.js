@@ -14,8 +14,10 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import TechStack from "../components/TechStack";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const DigitalMarketing = () => {
+  TabTitle("Digital Marketing | Skeletos IT Services");
   return (
     <div>
       <div className="container text-center my-5">

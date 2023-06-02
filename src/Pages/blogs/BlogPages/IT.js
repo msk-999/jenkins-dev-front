@@ -2,8 +2,12 @@ import React from "react";
 import ShareThisPost from "../../../components/ShareThisPost";
 import Layer1 from "../../../img/blogs/blog22.jpg";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const IT = () => {
+  TabTitle(
+    "3 Reasons Why Future Of Information Technology In India Is Booming"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

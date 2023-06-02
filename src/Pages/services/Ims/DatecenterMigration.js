@@ -7,8 +7,10 @@ import layer5 from "../../../img/SaaS.png";
 import layer6 from "../../../img/IaaS.png";
 import layer7 from "../../../img/PaaS.png";
 import CloudPlatform from "../../../components/CloudPlatform";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const DatecenterMigration = () => {
+  TabTitle("Datacenter Migration | Skeletos");
   return (
     <div>
       <div className="container text-center my-5">

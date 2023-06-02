@@ -14,8 +14,10 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ManagedServices = () => {
+  TabTitle("Managed Services | Skeletos IT Services");
   return (
     <div>
       <div className="container text-center my-5">

@@ -38,8 +38,10 @@ import Blog35 from "./BlogComponents/Blog35";
 import Blog36 from "./BlogComponents/Blog36";
 import Blog37 from "./BlogComponents/Blog37";
 import Blog38 from "./BlogComponents/Blog38";
+import { TabTitle } from "../../utils/GeneralFunctions";
 
 const ItSupportBlog = () => {
+  TabTitle("IT Support Blogs | | Skeletos IT Services");
   return (
     <div>
       <div className="container text-center my-5">

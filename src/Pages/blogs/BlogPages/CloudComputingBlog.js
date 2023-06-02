@@ -3,8 +3,12 @@ import Layer1 from "../../../img/blogs/blog38.jpg";
 import Layer2 from "../../../img/blogs/blog38_img.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const CloudComputingBlog = () => {
+  TabTitle(
+    "Do You Want To Be Independent From The Infrastructure Of The Cloud? | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -38,9 +42,10 @@ const CloudComputingBlog = () => {
               is a digital transformation to your business. <br />
               <div className="row justify-content-center my-5">
                 <div className="col-8">
-                  <img src={Layer2} alt="" className="img-fluid"/>
+                  <img src={Layer2} alt="" className="img-fluid" />
                 </div>
-              </div><br />
+              </div>
+              <br />
               <span className="h4 text-info">What is Cloud Computing?</span>
               <br />
               Cloud computing means storing and accessing your data on the

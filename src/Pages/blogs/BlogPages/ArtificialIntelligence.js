@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog21.jpg";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ArtificialIntelligence = () => {
+  TabTitle(
+    "How Artificial Intelligence Tools That Will Change The Way You Do Business | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -141,7 +145,10 @@ const ArtificialIntelligence = () => {
               because of AI. Being aware of them can help us come up with
               solutions to limit the damage. To get more information about
               artificial intelligence. To get more information{" "}
-              <Link to="/contact" className="text-decoration-none h6 text-info">connect us</Link>.
+              <Link to="/contact" className="text-decoration-none h6 text-info">
+                connect us
+              </Link>
+              .
             </p>
           </div>
         </div>

@@ -2,8 +2,12 @@ import React from "react";
 import ShareThisPost from "../../../components/ShareThisPost";
 import Layer1 from "../../../img/blogs/blog19.jpg";
 import Layer2 from "../../../img/blogs/Blog19_trends.png";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const TechTrends = () => {
+  TabTitle(
+    "Top 3 Technology Trends You Should Know About | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

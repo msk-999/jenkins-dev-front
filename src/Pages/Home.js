@@ -17,10 +17,12 @@ import layer14 from "../img/brand2Rectangle 230.svg";
 import layer15 from "../img/brand3Rectangle 231.svg";
 import layer16 from "../img/Rectangle 236StaffAug.svg";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const Home = () => {
+  TabTitle('Digital Solutions IT Services | Skeletos');
   return (
-    <div className="landing-page my-3">
+    <div className="landing-page my-3 justify-content-center">
       <section className="hero-section">
         <div className="container my-5">
           <div className="row pt-5">

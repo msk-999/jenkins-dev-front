@@ -1,8 +1,12 @@
 import React from "react";
 import Layer1 from "../../../img/blogs/blog4.jpg";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const DatacenterManagementServices = () => {
+  TabTitle(
+    " Datacenter Management Services? What is Datacenter Management Services | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

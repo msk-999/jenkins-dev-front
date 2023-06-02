@@ -2,8 +2,10 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog11.png";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ModernECommerce = () => {
+  TabTitle("Importance Of Modern E-Commerce In 2022 | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">
@@ -36,12 +38,18 @@ const ModernECommerce = () => {
               then you will face a lot of hurdles which is why e-commerce
               development plays an important role in businesses. <br />
               <br />
-              <Link to="/ecommerce-development" className="text-decoration-none">E-commerce development</Link> is
-              one of the latest inventions of the modern generation to serve the
-              shopping industry by increasing the selling and buying standards.
-              E-commerce brings an abundance of advantages for business owners
-              as e-commerce development providers provide different benefits
-              that can aid in growing the business greatly. <br />
+              <Link
+                to="/ecommerce-development"
+                className="text-decoration-none"
+              >
+                E-commerce development
+              </Link>{" "}
+              is one of the latest inventions of the modern generation to serve
+              the shopping industry by increasing the selling and buying
+              standards. E-commerce brings an abundance of advantages for
+              business owners as e-commerce development providers provide
+              different benefits that can aid in growing the business greatly.{" "}
+              <br />
               <br />
               The importance of e-commerce development has increased a lot in
               the recent times. The main reason behind it is that it provides a

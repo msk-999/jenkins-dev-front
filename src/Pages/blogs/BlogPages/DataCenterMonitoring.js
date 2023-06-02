@@ -1,8 +1,10 @@
 import React from "react";
 import Layer1 from "../../../img/blogs/blog13.png";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const DataCenterMonitoring = () => {
+  TabTitle("Why Data Center Monitoring Is Essential | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog26.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const DisasterRecoveryPlan = () => {
+  TabTitle(
+    "Why Disaster Recovery Plan Value More Than Actual Plan ? | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

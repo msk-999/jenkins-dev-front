@@ -1,8 +1,10 @@
 import React from "react";
 import App from "../../../App";
 import Apply from "../../../components/Apply";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const SalesMarketingExecutive = () => {
+  TabTitle("Sales Marketing Executive | Skeletos IT Services");
   return (
     <>
       <div className="container my-5">

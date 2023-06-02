@@ -6,8 +6,10 @@ import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 import layer1 from "../../../img/softdev/Software-Development.png";
 import layer2 from "../../../img/softdev/Technologies-we-serve.png";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const Software = () => {
+  TabTitle("Software Development | Skeletos");
   return (
     <div>
       <div className="container my-5">

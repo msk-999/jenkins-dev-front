@@ -3,8 +3,12 @@ import layer1 from "../../../img/blogs/NAC.jpg";
 import layer2 from "../../../img/blogs/Easy-NAC-300x138.png";
 import Component1 from "../../../components/Component1";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ChooseRightNac = () => {
+  TabTitle(
+    "Choose A Right NAC (Network Access Control) For Your Office | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

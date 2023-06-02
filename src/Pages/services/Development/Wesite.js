@@ -9,8 +9,10 @@ import layer3 from "../../../img/softdev/MobileFirst.png";
 import layer4 from "../../../img/softdev/content1.png";
 import layer5 from "../../../img/softdev/webInfluence.png";
 import DigiMarketing from "../../../components/DigiMarketing";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const Wesite = () => {
+  TabTitle("Website Development | Skeletos");
   return (
     <div>
       <div className="container my-5">

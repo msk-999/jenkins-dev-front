@@ -3,8 +3,10 @@ import Layer1 from "../../../img/blogs/blog17.jpg";
 import Layer2 from "../../../img/blogs/blog17_graph.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const NewEcommerce = () => {
+  TabTitle("Dos & Don’ts While Doing Cloud Migration | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

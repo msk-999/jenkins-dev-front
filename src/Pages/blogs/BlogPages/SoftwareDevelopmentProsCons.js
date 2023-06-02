@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog14.png";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const SoftwareDevelopmentProsCons = () => {
+  TabTitle(
+    "Pros And Cons Of Outsourcing Software Development | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

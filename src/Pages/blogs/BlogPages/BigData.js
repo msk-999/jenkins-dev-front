@@ -2,8 +2,10 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog20.png";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const BigData = () => {
+  TabTitle("Are You Ignoring Big Data? Don’t Do That! | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

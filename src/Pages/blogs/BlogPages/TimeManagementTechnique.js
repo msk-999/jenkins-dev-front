@@ -3,8 +3,12 @@ import Layer1 from "../../../img/blogs/blog28.png";
 import Layer2 from "../../../img/blogs/blog28_img.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const TimeManagementTechnique = () => {
+  TabTitle(
+    "Do You Get Tired At The End Of Day Without Being Efficient On Workplace? | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
@@ -99,7 +103,8 @@ const TimeManagementTechnique = () => {
               complete the task you will need more time to complete a task. For
               example, if you decide to make ppt in 3 hours then you will
               complete that in 3 hours but if decide it to make in one hour then
-              you will be able to complete that in one hour. <br /><br />
+              you will be able to complete that in one hour. <br />
+              <br />
               <span className="h6 fw-bold">
                 What Type of people will get benefits from this?
               </span>
@@ -118,12 +123,13 @@ const TimeManagementTechnique = () => {
               in sequences according to the priority. Once you made the perfect
               list start doing immediately. <br />
               It’s a very easy and simple method to complete all your small
-              tasks. <br /><br />
+              tasks. <br />
+              <br />
               <span className="h6 fw-bold">
                 What Type of people will get benefits from this?
               </span>
-              <br /> If You’re struggling to focus on the thing
-              If Your Analytical Thinker <br />
+              <br /> If You’re struggling to focus on the thing If Your
+              Analytical Thinker <br />
               <br />
               If you feel overwhelmed
               <li className="h5 fw-bold text-primary">Eat that Frog</li>If you
@@ -133,7 +139,8 @@ const TimeManagementTechnique = () => {
               nothing worse will happen to you the rest of the day.” <br />
               Start your day by doing the most difficult task. With your morning
               motivation and willingness, you can complete the difficult task
-              easily and be the tense free whole day. <br /><br />
+              easily and be the tense free whole day. <br />
+              <br />
               <span className="h6 fw-bold">
                 What Type of people will get benefits from this?
               </span>

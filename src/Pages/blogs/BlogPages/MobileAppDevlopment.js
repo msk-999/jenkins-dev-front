@@ -2,8 +2,12 @@ import React from "react";
 import Layer1 from "../../../img/blogs/blog36.jpg";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const MobileAppDevlopment = () => {
+  TabTitle(
+    "Still Thinking About Mobile Application Development? | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

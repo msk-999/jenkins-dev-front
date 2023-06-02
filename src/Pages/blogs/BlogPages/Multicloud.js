@@ -3,8 +3,10 @@ import Layer1 from "../../../img/blogs/blog18.jpg";
 import Layer2 from "../../../img/blogs/blog18_What-is-Multi-Cloud.png";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const Multicloud = () => {
+  TabTitle("What Is MultiCloud? | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

@@ -3,8 +3,12 @@ import Layer1 from "../../../img/blogs/blog31.jpg";
 import Layer2 from "../../../img/blogs/blog31_img.jpg";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const SoftwareManagementTool = () => {
+  TabTitle(
+    "Why Entrepreneurs Use Software Management Tools To Boost Business | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">

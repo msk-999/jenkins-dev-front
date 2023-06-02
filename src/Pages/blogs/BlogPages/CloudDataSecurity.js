@@ -1,7 +1,10 @@
 import React from "react";
 import Layer1 from "../../../img/blogs/blog24.jpg";
 import ShareThisPost from "../../../components/ShareThisPost";
+import { TabTitle } from "../../../utils/GeneralFunctions";
+
 const CloudDataSecurity = () => {
+  TabTitle("Why Cloud Data Security Is Important ? | Skeletos IT Services");
   return (
     <div>
       <div className="container my-5 text-center">

@@ -5,8 +5,10 @@ import layer25 from "../img/ContactUs.svg";
 import layer26 from "../img/Discuss.svg";
 import layer27 from "../img/Evaluate.svg";
 import layer28 from "../img/KickStart.svg";
+import { TabTitle } from "../utils/GeneralFunctions";
 
 const AboutUs = () => {
+  TabTitle("About Us | Skeletos");
   return (
     <div>
       <div className="container my-5">

@@ -10,8 +10,10 @@ import layer8 from "../../../img/cloud/Value-for-Money.png";
 import layer9 from "../../../img/cloud/Futuristic.png";
 import layer10 from "../../../img/cloud/02-INTERNAL-CLOUD-SOLUTIONS-04-768x321.png";
 import CloudPlatform from "../../../components/CloudPlatform";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const CloudSolutions = () => {
+  TabTitle("Cloud Solutions | Skeletos");
   return (
     <div>
       <div className="container my-5 text-center">

@@ -2,8 +2,12 @@ import React from "react";
 import ShareThisPost from "../../../components/ShareThisPost";
 import Layer1 from "../../../img/blogs/blog32.jpg";
 import { Link } from "react-router-dom";
+import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const Intrapreneurship = () => {
+  TabTitle(
+    "3 Reasons Why “Intrapreneurship” Is The Next Big Thing | Skeletos IT Services"
+  );
   return (
     <div>
       <div className="container my-5 text-center">
