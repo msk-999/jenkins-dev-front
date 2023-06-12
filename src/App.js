@@ -59,10 +59,12 @@ import Blog36 from "./Pages/blogs/BlogPages/MobileAppDevlopment";
 import Blog37 from "./Pages/blogs/BlogPages/WebApplication";
 import Blog38 from "./Pages/blogs/BlogPages/CloudComputingBlog";
 import DigitalMarketing from "./Pages/DigitalMarketing";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/about" element={<AboutUs />} />

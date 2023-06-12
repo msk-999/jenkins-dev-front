@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import layer1 from "../../../img/softdev/e-commerce.png";
 import layer2 from "../../../img/softdev/STRATEGY-1.png";
-import DigiMarketing from "../../../components/DigiMarketing";
 import { TabTitle } from "../../../utils/GeneralFunctions";
 
 const ECommerce = () => {
@@ -106,8 +105,6 @@ const ECommerce = () => {
             </div>
           </div>
         </div>
-
-        <DigiMarketing />
       </div>
     </div>
   );

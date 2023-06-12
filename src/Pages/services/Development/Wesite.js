@@ -8,8 +8,8 @@ import layer2 from "../../../img/softdev/WPthemeDev.jpg";
 import layer3 from "../../../img/softdev/MobileFirst.png";
 import layer4 from "../../../img/softdev/content1.png";
 import layer5 from "../../../img/softdev/webInfluence.png";
-import DigiMarketing from "../../../components/DigiMarketing";
 import { TabTitle } from "../../../utils/GeneralFunctions";
+import { Link } from "react-router-dom";
 
 const Wesite = () => {
   TabTitle("Website Development | Skeletos");
@@ -22,9 +22,11 @@ const Wesite = () => {
             <h6 className="py-2">From web presence to web influence</h6>
             <div className="row mt-3">
               <div className="col">
-                <button type="button" className="btn btn-outline-dark">
-                  Tell us about your project
-                </button>
+                <Link to="/contact">
+                  <button type="button" className="btn btn-outline-dark">
+                    Tell us about your project
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -156,14 +158,14 @@ const Wesite = () => {
 
         <div className="row my-3">
           <div className="col text-center">
-            <button type="button" className="btn btn-outline-dark">
-              Tell us about your project{" "}
-              <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
-            </button>
+            <Link to="/contact">
+              <button type="button" className="btn btn-outline-dark">
+                Tell us about your project{" "}
+                <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+              </button>
+            </Link>
           </div>
         </div>
-
-        <DigiMarketing />
       </div>
     </div>
   );
