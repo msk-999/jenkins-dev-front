@@ -8,24 +8,37 @@ const Blog12 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/e-commerce-development">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            Are you still thinking of E-commerce Development for your business
-            in 2022?
-          </h5>
+          <Link
+            to="/blogs/e-commerce-development"
+            className="text-decoration-none text-dark"
+          >
+            <h5>
+              Are you still thinking of E-commerce Development for your business
+              in 2022?
+            </h5>
+          </Link>
           <p className="card-text">
             Importance Of Global E-Commerce Development: A blog emphasizing the
             importance of ecommerce for your business. Before starting any
             business
           </p>{" "}
           <br />
-          <Link to="/blogs/e-commerce-development">
-            <a href="#" className="fw-bold text-success">
-              READ MORE
-            </a>
+          <Link
+            to="/blogs/e-commerce-development"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

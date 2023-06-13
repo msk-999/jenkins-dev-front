@@ -27,8 +27,8 @@ import Blog4 from "./Pages/blogs/BlogPages/DatacenterManagementServices";
 import Blog5 from "./Pages/blogs/BlogPages/ROI";
 import Blog6 from "./Pages/blogs/BlogPages/BusinessPlan";
 import Blog7 from "./Pages/blogs/BlogPages/CustomSoftwareDevelopment";
-import Blog8 from "./Pages/blogs/BlogPages/IMS";
-import Blog9 from "./Pages/blogs/BlogPages/BenifitsOfBYOD";
+import Blog8 from "./Pages/blogs/BlogPages/BenifitsOfBYOD";
+import Blog9 from "./Pages/blogs/BlogPages/IMS";
 import Blog10 from "./Pages/blogs/BlogPages/InfrastructureManagement";
 import Blog11 from "./Pages/blogs/BlogPages/ModernECommerce";
 import Blog12 from "./Pages/services/Development/ECommerce";
@@ -112,8 +112,8 @@ function App() {
           path="/blogs/why-custom-software-development"
           element={<Blog7 />}
         />
-        <Route path="/blogs/what-is-ims" element={<Blog8 />} />
-        <Route path="/blogs/benefits-of-byod" element={<Blog9 />} />
+        <Route path="/blogs/benefits-of-byod" element={<Blog8 />} />
+        <Route path="/blogs/what-is-ims" element={<Blog9 />} />
         <Route
           path="/blogs/what-is-infrastructure-management"
           element={<Blog10 />}

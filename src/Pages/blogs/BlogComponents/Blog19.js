@@ -8,23 +8,33 @@ const Blog19 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/top-technology-trends">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            Top 3 Technology Trends You Should Know About
-          </h5>
+          <Link
+            to="/blogs/top-technology-trends"
+            className="text-decoration-none text-dark"
+          >
+            <h5>Top 3 Technology Trends You Should Know About</h5>
+          </Link>
           <p className="card-text">
             How to Make an Effortless Cloud Migration Plan – Checklist & Guide:
             A blog about how to make a cloud migration plan to ensure a smooth
             migration.
           </p>
-          <Link to="/blogs/top-technology-trends">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/top-technology-trends"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

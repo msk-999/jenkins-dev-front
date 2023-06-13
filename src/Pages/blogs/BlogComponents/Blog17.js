@@ -8,11 +8,22 @@ const Blog17 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/are-you-e-commerce-newbie">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">Are You an E-Commerce Newbie?</h5>
+          <Link
+            to="/blogs/are-you-e-commerce-newbie"
+            className="text-decoration-none text-dark"
+          >
+            <h5>Are You an E-Commerce Newbie?</h5>
+          </Link>
           <br />
           <p className="card-text">
             for an organization to get excitedCan you imagine a life without
@@ -20,10 +31,12 @@ const Blog17 = () => {
             as big as this in the
           </p>{" "}
           <br />
-          <Link to="/blogs/are-you-e-commerce-newbie">
-            <a href="#" className="fw-bold text-success">
-              READ MORE
-            </a>
+          <Link
+            to="/blogs/are-you-e-commerce-newbie"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

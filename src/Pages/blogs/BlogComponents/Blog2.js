@@ -8,20 +8,34 @@ const Blog2 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/shall-i-go-with-it-outsourcing">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">Shall I go with IT outsourcing?</h5> <br />
+          <Link
+            to="/blogs/shall-i-go-with-it-outsourcing"
+            className="text-decoration-none text-dark"
+          >
+            <h5>Shall I go with IT outsourcing?</h5>
+          </Link>{" "}
+          <br />
           <p className="card-text">
             IT outsourcing comes with many benefits which will boost your
             business but at the same time, you cannot avoid the risk which comes
             with it. Outsourcing services
           </p>
-          <Link to="/blogs/shall-i-go-with-it-outsourcing">
-            <a href="#" className="text-decoration-none text-success fw-bold">
-              READ MORE
-            </a>
+          <Link
+            to="/blogs/shall-i-go-with-it-outsourcing"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

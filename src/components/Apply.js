@@ -2,6 +2,9 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Container, Form, Button } from "react-bootstrap";
 import { API_ENDPOINT } from "../config";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "../css/Styles.css"
 
 function Apply() {
   const [name, setName] = useState("");
@@ -13,15 +16,17 @@ function Apply() {
   const [phoneError, setPhoneError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [documentsError, setDocumentsError] = useState("");
-  const [coverLetterError, setCoverLetterError] = useState("");
+  // const [coverLetterError, setCoverLetterError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const fileInputRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !phone || !email || !coverLetter || !documents) {
-      alert("Please fill out all the fields");
-      return;
-    }
+    if (!name || !phone || !email || !documents) {
+    toast.error("Please fill out all the fields");
+    return;
+  }
+    setIsSubmitting(true);
     let formData = new FormData();
     formData.append("name", name);
     formData.append("phone", phone);
@@ -35,19 +40,23 @@ function Apply() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        // Reset the form fields
-        setName("");
-        setPhone("");
-        setEmail("");
-        setCoverLetter("");
-        setDocuments(null);
-        // Reset the file input field
-        if (fileInputRef.current) {
-          fileInputRef.current.value = null;
-        }
+        toast.success("Application submitted successfully");
+        setTimeout(() => {
+          setIsSubmitting(false);
+          setName("");
+          setPhone("");
+          setEmail("");
+          setCoverLetter("");
+          setDocuments(null);
+          if (fileInputRef.current) {
+            fileInputRef.current.value = null;
+          }
+        }, 1500); // Delay clearing the fields by 1.5 seconds (adjust as needed)
       })
       .catch((error) => {
         console.error(error);
+        toast.error("An error occurred while submitting the application");
+        setIsSubmitting(false);
       });
   };
 
@@ -80,11 +89,6 @@ function Apply() {
 
   const handleCoverLetterChange = (e) => {
     setCoverLetter(e.target.value);
-    if (!e.target.value) {
-      setCoverLetterError("Cover Letter is required");
-    } else {
-      setCoverLetterError("");
-    }
   };
 
   const handleDocumentsChange = (e) => {
@@ -148,6 +152,7 @@ function Apply() {
                     <Form.Label>Contact Phone:</Form.Label>
                     <Form.Control
                       type="number"
+                      className="no-spinner"
                       placeholder="Enter your phone number"
                       required
                       isInvalid={!!phoneError}
@@ -180,14 +185,12 @@ function Apply() {
                       as="textarea"
                       rows={3}
                       placeholder="Enter your cover letter"
-                      required
                       value={coverLetter}
                       onChange={handleCoverLetterChange}
-                      isInvalid={!!coverLetterError}
                     />
-                    <Form.Control.Feedback type="invalid">
+                    {/* <Form.Control.Feedback type="invalid">
                       {coverLetterError}
-                    </Form.Control.Feedback>
+                    </Form.Control.Feedback> */}
                   </Form.Group>
 
                   <Form.Group controlId="formDocuments" className="mb-3">
@@ -209,14 +212,16 @@ function Apply() {
                     type="submit"
                     variant="outline-dark"
                     className="btn btn-outline-dark px-3"
+                    disabled={isSubmitting} // Disable the button while submitting
                   >
-                    Submit
+                    {isSubmitting ? "Submitting..." : "Submit"}
                   </Button>
                 </Form>
               </div>
             </div>
           </Container>
         </div>
+        <ToastContainer />
       </div>
     </div>
   );

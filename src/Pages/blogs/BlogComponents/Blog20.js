@@ -8,23 +8,33 @@ const Blog20 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/are-you-ignoring-big-data-dont-do-that">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            Are You Ignoring Big Data? Don’t Do That!
-          </h5>
+          <Link
+            to="/blogs/are-you-ignoring-big-data-dont-do-that"
+            className="text-decoration-none text-dark"
+          >
+            <h5>Are You Ignoring Big Data? Don’t Do That!</h5>
+          </Link>
           <p className="card-text">
             Big Data is growing at a rapid rate, to the point where it’s at 90
             billion gigabytes per day . It’s no secret that Big Data is
           </p>
           <br />
-          <Link to="/blogs/are-you-ignoring-big-data-dont-do-that">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/are-you-ignoring-big-data-dont-do-that"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

@@ -8,21 +8,34 @@ const Blog7 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/why-custom-software-development">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            5 Reasons Why you should invest in Custom Software Development?
-          </h5>
+          <Link
+            to="/blogs/why-custom-software-development"
+            className="text-decoration-none text-dark"
+          >
+            <h5>
+              5 Reasons Why you should invest in Custom Software Development?
+            </h5>
+          </Link>
           <p className="card-text">
             Several reasons have been offered for why you should invest in
             custom software development.For some, they may be completely right.
           </p>
-          <Link to="/blogs/why-custom-software-development">
-            <a href="#" className="fw-bold text-success">
-              READ MORE
-            </a>
+          <Link
+            to="/blogs/why-custom-software-development"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

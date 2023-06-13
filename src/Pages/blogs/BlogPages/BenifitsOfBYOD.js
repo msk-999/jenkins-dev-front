@@ -1,5 +1,5 @@
 import React from "react";
-import Layer1 from "../../../img/blogs/blog9.png";
+import Layer1 from "../../../img/blogs/blog8.png";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { TabTitle } from "../../../utils/GeneralFunctions";
 

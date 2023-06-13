@@ -1,5 +1,5 @@
 import React from "react";
-import Layer1 from "../../../img/blogs/blog22.jpg";
+import Layer1 from "../../../img/blogs/blog23.jpg";
 import { Link } from "react-router-dom";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { TabTitle } from "../../../utils/GeneralFunctions";

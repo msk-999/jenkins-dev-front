@@ -8,21 +8,33 @@ const Blog35 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/devops-it-blog">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">All You Want to Know About DevOps</h5>
+          <Link
+            to="/blogs/devops-it-blog"
+            className="text-decoration-none text-dark"
+          >
+            <h5>All You Want to Know About DevOps</h5>
+          </Link>
           <p className="card-text">
             DevOps? What is DevOps? How This Technology is going to Enhance your
             Business? The ultimate guide of DevOps which is going to make
             operations Faster What is DevOps Technology?
           </p>
-          <Link to="/blogs/devops-it-blog">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/devops-it-blog"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

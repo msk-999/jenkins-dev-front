@@ -8,23 +8,33 @@ const Blog32 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/3-reasons-why-intrapreneurship">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            3 reasons why “Intrapreneurship” is the next big thing
-          </h5>
+          <Link
+            to="/blogs/3-reasons-why-intrapreneurship"
+            className="text-decoration-none text-dark"
+          >
+            <h5>3 reasons why “Intrapreneurship” is the next big thing</h5>
+          </Link>
           <p className="card-text">
             The business environment is getting competitive day by day and to be
             in-market companies should use each and every tool which is
             available and grow every day. Companies are coming up
           </p>
-          <Link to="/blogs/3-reasons-why-intrapreneurship">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/3-reasons-why-intrapreneurship"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

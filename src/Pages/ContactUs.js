@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import React, { useState } from "react";
 import layer21 from "../img/profile_data.svg";
 import layer22 from "../img/Location.svg";
@@ -21,6 +23,7 @@ const ContactUs = () => {
   const [phoneError, setPhoneError] = useState("");
   const [requirements, setRequirements] = useState("");
   const [requirementsError, setRequirementsError] = useState("");
+  const [message, setMessage] = useState("");
 
   const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
   const contactPhoneRegex = /^\+?\d{10,14}$/;
@@ -32,6 +35,10 @@ const ContactUs = () => {
       alert("Please fill out all the fields");
       return;
     }
+
+    // Show a loading state
+    toast.info("Submitting data...");
+
     fetch(API_ENDPOINT + "/users/create", {
       method: "POST",
       body: JSON.stringify({ name, phone, email, requirements }),
@@ -42,10 +49,15 @@ const ContactUs = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        // Do something with the response data
+        // Update the toast notification with the final result
+        toast.success(
+          "Thanks for your interest, we have received your details"
+        );
       })
       .catch((error) => {
         console.error(error);
+        // Update the toast notification with an error message
+        toast.error("An error occurred while submitting the data");
       });
 
     // Reset the form fields
@@ -53,8 +65,8 @@ const ContactUs = () => {
     setPhone("");
     setEmail("");
     setRequirements("");
-    // handle form submission
   };
+
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -100,6 +112,7 @@ const ContactUs = () => {
 
   return (
     <div>
+      {message && <p>{message}</p>}
       <div className="container my-5">
         <div className="row d-flex justify-content-center ">
           <div className="card shadow col-9 m-5">
@@ -125,7 +138,8 @@ const ContactUs = () => {
                   <Form.Group className="mb-2" controlId="contactNo">
                     <Form.Label>Contact Phone:</Form.Label>
                     <Form.Control
-                      type="tel"
+                      type="number"
+                      className="no-spinner"
                       placeholder="Enter your phone number"
                       required
                       isInvalid={!!phoneError}
@@ -270,6 +284,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -8,23 +8,35 @@ const Blog31 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/why-entrepreneurs-use-software-management-tools-to-boost-business">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            Why Entrepreneurs use Software Management Tools to boost business
-          </h5>
+          <Link
+            to="/blogs/why-entrepreneurs-use-software-management-tools-to-boost-business"
+            className="text-decoration-none text-dark"
+          >
+            <h5>
+              Why Entrepreneurs use Software Management Tools to boost business
+            </h5>
+          </Link>
           <p className="card-text">
             5 Reasons why Entrepreneurs should use Software Management Tools for
             Various Projects Many entrepreneurs like us are working on various
             projects at one time.
           </p>
-          <Link to="/blogs/why-entrepreneurs-use-software-management-tools-to-boost-business">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/why-entrepreneurs-use-software-management-tools-to-boost-business"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

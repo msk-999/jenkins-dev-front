@@ -8,13 +8,22 @@ const Blog14 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/pros-and-cons-of-software-development">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            Pros and Cons of outsourcing Software Development
-          </h5>
+          <Link
+            to="/blogs/pros-and-cons-of-software-development"
+            className="text-decoration-none text-dark"
+          >
+            <h5>Pros and Cons of outsourcing Software Development</h5>
+          </Link>
           <p className="card-text">
             The Ultimate Guide to Disadvantages of Outsourcing: A blog that
             takes a look at the disadvantages and positives of outsourcing
@@ -25,7 +34,8 @@ const Blog14 = () => {
             to="/blogs/pros-and-cons-of-software-development"
             className="text-decoration-none fw-bold text-success"
           >
-            READ MORE
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

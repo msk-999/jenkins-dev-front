@@ -8,23 +8,33 @@ const Blog29 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/business_automation_benefits">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            How Business Automation Can Protect your business
-          </h5>
+          <Link
+            to="/blogs/business_automation_benefits"
+            className="text-decoration-none text-dark"
+          >
+            <h5>How Business Automation Can Protect your business</h5>
+          </Link>
           <br />
           <p className="card-text">
             Future of Information Technology in India India’s contribution to
             the field of information technology.
           </p>
-          <Link to="/blogs/business_automation_benefits">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/business_automation_benefits"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>

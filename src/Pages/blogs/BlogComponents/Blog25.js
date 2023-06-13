@@ -8,23 +8,35 @@ const Blog25 = () => {
       <div className="card">
         <div className="row justify-content-center">
           <div className="col">
-            <img className="card-img-top img-fluid" src={Layer1} alt="Blog1" />
+            <Link to="/blogs/work-from-home-or-work-from-office">
+              <img
+                className="card-img-top img-fluid"
+                src={Layer1}
+                alt="Blog1"
+              />
+            </Link>
           </div>
         </div>
         <div className="card-body">
-          <h5 className="card-title">
-            Are you in Battle of Work From Home and Work From Office? Here are 5
-            pros and cons
-          </h5>
+          <Link
+            to="/blogs/work-from-home-or-work-from-office"
+            className="text-decoration-none text-dark"
+          >
+            <h5>
+              Are you in Battle of Work From Home and Work From Office? Here are
+              5 pros and cons
+            </h5>
+          </Link>
           <p className="card-text">
             Before covid 19 work from home was just an imagination for many of
             employees, but in 2020 it has become a part of a system
           </p>
-          <Link to="/blogs/work-from-home-or-work-from-office">
-            <a href="#" className="text-decoration-none fw-bold text-success">
-              READ MORE {">"}
-              {">"}
-            </a>
+          <Link
+            to="/blogs/work-from-home-or-work-from-office"
+            className="text-decoration-none fw-bold text-success"
+          >
+            READ MORE {">"}
+            {">"}
           </Link>
         </div>
       </div>
