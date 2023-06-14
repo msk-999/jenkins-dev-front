@@ -18,9 +18,10 @@ import layer15 from "../img/brand3Rectangle 231.svg";
 import layer16 from "../img/Rectangle 236StaffAug.svg";
 import { Link } from "react-router-dom";
 import { TabTitle } from "../utils/GeneralFunctions";
+import "../css/Homepage.css";
 
 const Home = () => {
-  TabTitle('Digital Solutions IT Services | Skeletos');
+  TabTitle("Digital Solutions IT Services | Skeletos");
   return (
     <div className="landing-page my-3 justify-content-center">
       <section className="hero-section">
@@ -64,7 +65,7 @@ const Home = () => {
               help you establish leadership in your industry
             </h5>
             <div className="row gap-2 justify-content-center">
-              <div className="col-sm-2 border rounded">
+              <div className="col-sm-2 border rounded zoom-on-hover">
                 <img
                   src={layer1}
                   alt="Corporate IP Protection"
@@ -72,7 +73,7 @@ const Home = () => {
                 />
                 <h6>Corporate IP Protection</h6>
               </div>
-              <div className="col-sm-2 border rounded">
+              <div className="col-sm-2 border rounded zoom-on-hover">
                 <img
                   src={layer2}
                   alt="Crisis-Agnostic Enterprise"
@@ -80,7 +81,7 @@ const Home = () => {
                 />
                 <h6>Crisis-Agnostic Enterprise</h6>
               </div>
-              <div className="col-sm-2 border rounded">
+              <div className="col-sm-2 border rounded zoom-on-hover">
                 <img
                   src={layer3}
                   alt="Business Continuity & Sustainability"
@@ -88,7 +89,7 @@ const Home = () => {
                 />
                 <h6>Business Continuity & Sustainability</h6>
               </div>
-              <div className="col-sm-2 border rounded">
+              <div className="col-sm-2 border rounded zoom-on-hover">
                 <img
                   src={layer4}
                   alt="Technology Transformation"
@@ -96,13 +97,13 @@ const Home = () => {
                 />
                 <h6>Technology Transformation</h6>
               </div>
-              <div className="col-sm-2 border rounded border rounded">
+              <div className="col-sm-2 border rounded zoom-on-hover">
                 <img
                   src={layer5}
-                  alt="Accessibility, Reliability, Scalability "
+                  alt="Accessibility, Reliability, Scalability"
                   className="img-fluid"
                 />
-                <h6>Accessibility, Reliability, Scalability </h6>
+                <h6>Accessibility, Reliability, Scalability</h6>
               </div>
             </div>
           </div>
@@ -127,9 +128,19 @@ const Home = () => {
               company’s strategic objectives, quickly.
             </p>
             <div className="row justify-content-center pt-5 gap-5">
-              <div className="col-sm-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
-                <img src={layer6} alt="ims1" className="img-fluid" />
-                <h6>Hassle-free management of IT infrastructure</h6>
+              <div className="col-md-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
+                <div className="row justify-content-center">
+                  <div className="col">
+                    <img
+                      src={layer6}
+                      alt="ims1"
+                      className="img-fluid mb-2 zoom-on-hover"
+                    />
+                  </div>
+                </div>
+                <h6 className="fw-bold">
+                  Hassle-free management of IT infrastructure
+                </h6>
                 <div className="card-text pb-2">
                   Total handholding throughout your IT transformation journey
                 </div>
@@ -137,17 +148,35 @@ const Home = () => {
                   Cost-effective and professional managed services
                 </div>
               </div>
-              <div className="col-sm-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
-                <img src={layer7} alt="ims2" className="img-fluid" />
-                <h6>Consultative approach with customized solutions</h6>
+              <div className="col-md-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
+                <div className="row justify-content-center">
+                  <div className="col">
+                    <img
+                      src={layer7}
+                      alt="ims2"
+                      className="img-fluid mb-2 zoom-on-hover"
+                    />
+                  </div>
+                </div>
+                <h6 className="fw-bold">
+                  Consultative approach with customized solutions
+                </h6>
                 <p>
                   Total handholding throughout your IT transformation journey
                 </p>
                 <p>Cost-effective and professional managed services</p>
               </div>
-              <div className="col-sm-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
-                <img src={layer8} alt="ims3" className="img-fluid" />
-                <h6 className="pt-2">
+              <div className="col-md-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded mb-2">
+                <div className="row justify-content-center">
+                  <div className="col">
+                    <img
+                      src={layer8}
+                      alt="ims3"
+                      className="img-fluid mb-2 zoom-on-hover"
+                    />
+                  </div>
+                </div>
+                <h6 className="fw-bold">
                   Boost your IT ROI and reduce technical debt
                 </h6>
                 <p className="card-text">True value for your IT Investment</p>
@@ -211,7 +240,7 @@ const Home = () => {
                   <img
                     src={layer10}
                     alt="Web-encterprise"
-                    className="img-fluid"
+                    className="img-fluid zoom-on-hover"
                   />
                   <p>Web-based Enterprise Applications</p>
                 </div>
@@ -219,7 +248,7 @@ const Home = () => {
                   <img
                     src={layer11}
                     alt="Mobile-enterprise"
-                    className="img-fluid"
+                    className="img-fluid zoom-on-hover"
                   />
                   <p>Enterprise Mobile Applications</p>
                 </div>
@@ -248,28 +277,43 @@ const Home = () => {
               </h5>
               <div className="row py-4">
                 <div className="col-4">
-                  <img
-                    src={layer13}
-                    alt="WebConsulting"
-                    className="img-fluid"
-                  />
-                  <p>Web Consulting</p>
+                  <Link
+                    to="/software-development"
+                    className="text-decoration-none text-dark"
+                  >
+                    <img
+                      src={layer13}
+                      alt="WebConsulting"
+                      className="img-fluid zoom-on-hover"
+                    />
+                    <p>Web Consulting</p>
+                  </Link>
                 </div>
                 <div className="col-4">
-                  <img
-                    src={layer14}
-                    alt="Website Development"
-                    className="img-fluid"
-                  />
-                  <p>Website Development</p>
+                  <Link
+                    to="/website-development"
+                    className="text-decoration-none text-dark"
+                  >
+                    <img
+                      src={layer14}
+                      alt="Website Development"
+                      className="img-fluid zoom-on-hover"
+                    />
+                    <p>Website Development</p>
+                  </Link>
                 </div>
                 <div className="col-4">
-                  <img
-                    src={layer15}
-                    alt="Ecommerce Platform Optimization"
-                    className="img-fluid"
-                  />
-                  <p>Ecommerce Platform Optimization</p>
+                  <Link
+                    to="/ecommerce-development"
+                    className="text-decoration-none text-dark"
+                  >
+                    <img
+                      src={layer15}
+                      alt="Ecommerce Platform Optimization"
+                      className="img-fluid zoom-on-hover"
+                    />
+                    <p>Ecommerce Platform Optimization</p>
+                  </Link>
                 </div>
               </div>
             </div>

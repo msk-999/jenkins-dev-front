@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container, NavDropdown, Dropdown } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 import logo from "./skIcon.svg";
-import { Link } from "react-router-dom";
 import "./MyNavbar.css"; // Import custom CSS
 
 function MyNavbar() {
@@ -15,114 +14,137 @@ function MyNavbar() {
   return (
     <Navbar bg="light" expand="lg" fixed="top">
       <Container>
-        <div className="col-3">
-          <Navbar.Brand className="me-auto">
-            <Link to="/">
-              <img src={logo} alt="logo" />
-            </Link>
-          </Navbar.Brand>
-        </div>
-
-        {/* <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          onClick={toggleExpanded}
-        /> */}
-
-        {/* <Navbar.Collapse id="basic-navbar-nav" expanded={expanded}> */}
+        <Navbar.Brand>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
-          <div className="col text-center">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to="/" className="nav-link active">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link active">
-                  About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/careers" className="nav-link active">
-                  Careers
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/it-support-blog" className="nav-link active">
-                  Blogs
-                </Link>
-              </li>
-              <NavDropdown
-                title="Services"
-                id="basic-nav-dropdown"
-                onMouseEnter={() => handleDropdownToggle(true)}
-                onMouseLeave={() => handleDropdownToggle(false)}
-                show={isDropdownOpen}
+          <Nav className="ms-auto align-items-center">
+            <Nav.Link
+              as={NavLink}
+              exact
+              to="/"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Home
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/about"
+              className="nav-link"
+              activeClassName="active"
+            >
+              About Us
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/careers"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Careers
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
+              to="/it-support-blog"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Blogs
+            </Nav.Link>
+            <NavDropdown
+              title="Services"
+              id="services-dropdown"
+              show={isDropdownOpen}
+              onMouseEnter={() => handleDropdownToggle(true)}
+              onMouseLeave={() => handleDropdownToggle(false)}
+            >
+              <NavDropdown.Item>
+                <NavDropdown title="IMS" id="ims-dropdown">
+                  <NavDropdown.Item
+                    as={NavLink}
+                    to="/managed-services"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    Managed Services
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={NavLink}
+                    to="/cloud-solutions"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    Cloud Solutions
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={NavLink}
+                    to="/datacenter-migration"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    Datacenter Migration
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={NavLink}
+                to="/devops"
+                className="nav-link"
+                activeClassName="active"
               >
-                <NavDropdown.Item>
-                  <NavDropdown title="IMS" id="basic-nav-dropdown">
-                    <NavDropdown.Item>
-                      <Link to="/managed-services" className="nav-link active">
-                        Managed Services
-                      </Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link to="/cloud-solutions" className="nav-link active">
-                        Cloud Solutions
-                      </Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link
-                        to="/datacenter-migration"
-                        className="nav-link active"
-                      >
-                        Datacenter Migration
-                      </Link>
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link to="/devops" className="nav-link active">
-                    DevOps
+                DevOps
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavDropdown title="Development" id="development-dropdown">
+                  <NavDropdown.Item
+                    as={NavLink}
+                    to="/software-development"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    Software Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={NavLink}
+                    to="/website-development"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    Website Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={NavLink}
+                    to="/ecommerce-development"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    E-Commerce Development
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link
+              as={NavLink}
+              to="/contact"
+              className="nav-link"
+              activeClassName="active"
+            >
+              <div className="row">
+                <div className="col">
+                  <Link to="/contact">
+                    <button type="button" className="btn btn-outline-dark">
+                      Contact Us
+                    </button>
                   </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <NavDropdown title="Development" id="basic-nav-dropdown">
-                    <NavDropdown.Item>
-                      <Link
-                        to="/software-development"
-                        className="nav-link active"
-                      >
-                        Software Development
-                      </Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link
-                        to="/website-development"
-                        className="nav-link active"
-                      >
-                        Website Development
-                      </Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link
-                        to="/ecommerce-development"
-                        className="nav-link active"
-                      >
-                        E-Commerce Development
-                      </Link>
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </NavDropdown.Item>
-              </NavDropdown>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link active">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
+                </div>
+              </div>
+            </Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

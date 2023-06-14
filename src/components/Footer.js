@@ -7,19 +7,25 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-light py-3">
-          <hr />
+      <hr />
       <div className="container p-5">
         <div className="row">
           {/* <h4 className="text-center fw-bold">Contact Us</h4> <br /> */}
           <br />
-          <div className="col-md-2 d-flex align-items-between">
+          <div className="col-md-2">
             <div className="row justify-content-center">
-              <div className="col-6">
-                <img src={icon} alt="Company Logo" className="img-fluid mr-3" />
+              <div className="col-md-6">
+                <Link to="/">
+                  <img
+                    src={icon}
+                    alt="Company Logo"
+                    className="img-fluid mr-3"
+                  />
+                </Link>
               </div>
             </div>
           </div>
-         
+
           <div className="col-md-5">
             <div className="row">
               <div className="col-1">
@@ -37,7 +43,7 @@ const Footer = () => {
           </div>
           <br />
           <div className="col-md-5">
-            <div className="row justify-content-center">
+            <div className="row">
               <div className="col-1">
                 <FontAwesomeIcon icon={faLocationDot} size="xl" />
               </div>
@@ -54,12 +60,15 @@ const Footer = () => {
         </div>
 
         <div className="row justify-content-start">
-        <div className="col-2"></div>
+          <div className="col-2"></div>
           <div className="col-9">
-        <hr className="text-dark" />
+            <hr className="text-dark" />
             <ul className="list-inline">
               <li className="list-inline-item">
-                <Link to="/" className="list-inline-item text-decoration-none me-3">
+                <Link
+                  to="/"
+                  className="list-inline-item text-decoration-none me-3"
+                >
                   Home
                 </Link>
               </li>
