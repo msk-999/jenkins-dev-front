@@ -1,55 +1,91 @@
 import React from "react";
 import icon from "../img/Skeletos_icon.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-light py-3">
-      <div className="container">
+          <hr />
+      <div className="container p-5">
         <div className="row">
-          <div className="col-md-6 d-flex align-items-between">
+          {/* <h4 className="text-center fw-bold">Contact Us</h4> <br /> */}
+          <br />
+          <div className="col-md-2 d-flex align-items-between">
             <div className="row justify-content-center">
               <div className="col-6">
                 <img src={icon} alt="Company Logo" className="img-fluid mr-3" />
               </div>
             </div>
-            <div className="col-6">
-              <h5>About Us</h5>
-              <p>We are a business that specializes in...</p>
+          </div>
+         
+          <div className="col-md-5">
+            <div className="row">
+              <div className="col-1">
+                <FontAwesomeIcon icon={faLocationDot} size="xl" />
+              </div>
+              <div className="col-10">
+                <h6 className="fw-bold">India</h6>
+                <span className="h6 text-dark">
+                  Skeletos IT Services LLP
+                </span>{" "}
+                <br /> Level 02, Shakuntal Appt, Law College Road, Near Pastry
+                Corner, Nal Stop, Erandwane. <br /> India, MH, Pune: 411004
+              </div>
             </div>
           </div>
-          <div className="col-md-3">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li>
-                <Link to="/" className="text-decoration-none">
+          <br />
+          <div className="col-md-5">
+            <div className="row justify-content-center">
+              <div className="col-1">
+                <FontAwesomeIcon icon={faLocationDot} size="xl" />
+              </div>
+              <div className="col-10">
+                <h6 className="fw-bold">USA</h6>
+                <span className="h6 text-dark">
+                  Skeletos IT Services LLC
+                </span>{" "}
+                <br /> 651 N. Broad st., Suite 206, Middletown DE, USA <br />{" "}
+                Call: 302-520-2853
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row justify-content-start">
+        <div className="col-2"></div>
+          <div className="col-9">
+        <hr className="text-dark" />
+            <ul className="list-inline">
+              <li className="list-inline-item">
+                <Link to="/" className="list-inline-item text-decoration-none me-3">
                   Home
                 </Link>
               </li>
-              <li>
-                <Link to="/about" className="text-decoration-none">
+              <li className="list-inline-item">
+                <Link
+                  to="/about"
+                  className="list-inline-item text-decoration-none me-3"
+                >
                   Abous Us
                 </Link>
               </li>
-              <li>
-                <Link to="/careers" className="text-decoration-none">
+              <li className="list-inline-item">
+                <Link
+                  to="/careers"
+                  className="list-inline-item text-decoration-none me-3"
+                >
                   Careers
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="text-decoration-none">
+              <li className="list-inline-item">
+                <Link
+                  to="/contact"
+                  className="list-inline-item text-decoration-none me-3"
+                >
                   Contact Us
                 </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-3">
-            <h5>Contact Us</h5>
-            <ul className="list-unstyled">
-              <li>
-                Skeletos IT Services LLP Level 02, Shakuntal Appt, Law College
-                Road, Near Pastry Corner, Nal Stop, Erandwane, India, MH, Pune:
-                411004
               </li>
             </ul>
           </div>
