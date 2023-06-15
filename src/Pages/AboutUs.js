@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import mainLogo from "../img/Skeletos_icon.svg";
 import layer1 from "../img/whyHire.svg";
 import layer25 from "../img/ContactUs.svg";
@@ -6,25 +6,50 @@ import layer26 from "../img/Discuss.svg";
 import layer27 from "../img/Evaluate.svg";
 import layer28 from "../img/KickStart.svg";
 import { TabTitle } from "../utils/GeneralFunctions";
+import { Link } from "react-router-dom";
+import Hiring from "../components/Hiring.json";
+import Lottie from "lottie-react";
 
 const AboutUs = () => {
   TabTitle("About Us | Skeletos");
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const imageClasses = `rotate-effect img-fluid mr-3 ${
+    isHovered ? "rotate-effect" : ""
+  }`;
   return (
     <div>
       <div className="container my-5">
         <div className="row">
           <div className="col text-center pt-5 pb-3">
             <h2 className="pb-4">About Us</h2>
-            <img src={mainLogo} alt="mainLogo" className="img-fluid" />
+            <Link to="/">
+              <img
+                src={mainLogo}
+                alt="Rotating Image"
+                className={imageClasses}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+            </Link>
           </div>
         </div>
         <div className="row">
-          <div className="col text-center">
-            <h5>
+          <div className="col text-center p-3">
+            <h5 className="fw-bold py-3">
               OUR MISSION IS TO HELP BUSINESSES TO GROW WITH MODERN TECHNOLOGY
               AND SIMPLIFY COMPLICATED WORK WITH OUR CUSTOMIZED SOFTWARE.
             </h5>
-            <p>
+            <p className="py-3">
               Build all the digital solutions under one cloud at Skeletos in the
               minimum time and best price. Skeletos helps you to transform your
               business with strategic and innovative customized software. This
@@ -35,7 +60,7 @@ const AboutUs = () => {
               techniques in E-commerce, Healthcare, Banking, Hospitality,
               Manufacturing and Agriculture.
             </p>
-            <p>
+            <p className="py-3">
               Skeletos was founded in October 2017. It is one of the fastest,
               secure and reliable companies in Pune. Mr. Pramod Waikar is Chief
               Executive Officer and Founder of the company and has 21 years of
@@ -48,10 +73,20 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col text-center">
             <h3>Why You Should Hire Us?</h3>
-            <img src={layer1} alt="whyHire" className="img-fluid" />
+            <div
+              className="d-flex justify-content-center"
+              style={{ width: "100%" }}
+            >
+              <div
+                className="d-flex align-items-center"
+                style={{ width: "50%" }}
+              >
+                <Lottie loop={true} animationData={Hiring} />
+              </div>
+            </div>
             <p>
               IT outsourcing will help you to build your Digital infrastructure
               with their specialized Team experts. When you redistribute then
@@ -69,40 +104,57 @@ const AboutUs = () => {
         <div className="row">
           <div className="col text-center py-5">
             <h2 className="pb-3">GET STARTED TODAY WITH US</h2>
-            <div className="col">
-              <div className="row justify-content-around text-center gy-2">
-                <div className="col mx-2 border round">
-                  <img src={layer25} alt="" />
-                  <h6>Contact us</h6>
-                  <p>
-                    Fill up the details and Schedule call from our experts.
-                    Don't worry your data is safe with us
-                  </p>
-                </div>
-                <div className="col mx-2 border round">
-                  <img src={layer26} alt="" />
-                  <h6>Discuss with Experts</h6>
-                  <p>
-                    Discuss about project with our experts to understand and Get
-                    Best IT solution to enhance your project
-                  </p>
-                </div>
-                <div className="col mx-2 border round">
-                  <img src={layer27} alt="" />
-                  <h6>Evaluate Cost</h6>
-                  <p>
-                    Based on solutions will share project proposal with budget
-                    and Time Regulation
-                  </p>
-                </div>
-                <div className="col mx-2 border round">
-                  <img src={layer28} alt="" />
-                  <h6>Kick-off project</h6>
-                  <p>
-                    Once we sing project. Experts will come together and Kick of
-                    projects with their expertise and discipline
-                  </p>
-                </div>
+            <div className="row justify-content-around text-center">
+              <div className="col-md-3 mb-4 p-3">
+                <Link to="/contact" className="text-decoration-none text-dark">
+                  <div className="shadow border rounded zoom-on-hover">
+                    <img src={layer25} alt="" className=" img-fluid" />
+                    <h6 className="py-2">Contact us</h6>
+                    <p className="px-2">
+                      Fill up the details and schedule a call from our experts.
+                      Don't worry, your data is safe with us.
+                    </p>{" "}
+                    <br />
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-3 mb-4 p-3">
+                <Link to="/contact" className="text-decoration-none text-dark">
+                  <div className="shadow border rounded zoom-on-hover">
+                    <img src={layer26} alt="" className=" img-fluid" />
+                    <h6 className="py-2">Discuss with Experts</h6>
+                    <p className="px-2">
+                      Discuss your project with our experts to understand and
+                      get the best IT solutions to enhance your project.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-3 mb-4 p-3">
+                <Link to="/contact" className="text-decoration-none text-dark">
+                  <div className="shadow border rounded zoom-on-hover">
+                    <img src={layer27} alt="" className=" img-fluid" />
+                    <h6 className="py-2">Evaluate Cost</h6>
+                    <p>
+                      Based on the solutions, we will share a project proposal
+                      with budget and time regulations.
+                    </p>{" "}
+                    <br />
+                  </div>
+                </Link>
+              </div>
+              <div className="col-md-3 mb-4 p-3">
+                <Link to="/contact" className="text-decoration-none text-dark">
+                  <div className="shadow border rounded zoom-on-hover">
+                    <img src={layer28} alt="" className=" img-fluid" />
+                    <h6 className="py-2">Kick-off project</h6>
+                    <p className="px-2">
+                      Once we sign the project, our experts will come together
+                      and kick off the project with their expertise and
+                      discipline.
+                    </p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
