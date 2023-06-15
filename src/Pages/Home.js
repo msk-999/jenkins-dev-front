@@ -64,8 +64,8 @@ const Home = () => {
               development, mobile app development, and digital sustainability to
               help you establish leadership in your industry
             </h5>
-            <div className="row gap-2 justify-content-center">
-              <div className="col-sm-2 border rounded zoom-on-hover">
+            <div className="row gap-2 justify-content-center my-5">
+              <div className="col-md-2 shadow border rounded zoom-on-hover">
                 <img
                   src={layer1}
                   alt="Corporate IP Protection"
@@ -73,7 +73,7 @@ const Home = () => {
                 />
                 <h6>Corporate IP Protection</h6>
               </div>
-              <div className="col-sm-2 border rounded zoom-on-hover">
+              <div className="col-md-2 shadow border rounded zoom-on-hover">
                 <img
                   src={layer2}
                   alt="Crisis-Agnostic Enterprise"
@@ -81,7 +81,7 @@ const Home = () => {
                 />
                 <h6>Crisis-Agnostic Enterprise</h6>
               </div>
-              <div className="col-sm-2 border rounded zoom-on-hover">
+              <div className="col-md-2 shadow border rounded zoom-on-hover">
                 <img
                   src={layer3}
                   alt="Business Continuity & Sustainability"
@@ -89,7 +89,7 @@ const Home = () => {
                 />
                 <h6>Business Continuity & Sustainability</h6>
               </div>
-              <div className="col-sm-2 border rounded zoom-on-hover">
+              <div className="col-md-2 shadow border rounded zoom-on-hover">
                 <img
                   src={layer4}
                   alt="Technology Transformation"
@@ -97,7 +97,7 @@ const Home = () => {
                 />
                 <h6>Technology Transformation</h6>
               </div>
-              <div className="col-sm-2 border rounded zoom-on-hover">
+              <div className="col-md-2 shadow border rounded zoom-on-hover">
                 <img
                   src={layer5}
                   alt="Accessibility, Reliability, Scalability"
@@ -112,8 +112,8 @@ const Home = () => {
 
       <section className="IMS-section">
         <div className="container my-5">
-          <div className="row text-center pb-4">
-            <h2 className="text-secondary pb-4">
+          <div className="row text-center pb-4 justify-content-around">
+            <h2 className="text-secondary pb-5">
               Infrastructure Management & Cloud
             </h2>
             <h6 className="p-2">
@@ -121,43 +121,33 @@ const Home = () => {
               With Skeletos, you experience the transparency of an in-house IT
               team and expertise of a result-oriented team.
             </h6>
-            <p>
+            <p className="py-3">
               It’s a crime to reduce the importance of in-house IT team to that
               of a firefighter. If your core business is not technology, your
               existing IT department can significantly help you achieve
               company’s strategic objectives, quickly.
             </p>
-            <div className="row justify-content-center pt-5 gap-5">
-              <div className="col-md-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
-                <div className="row justify-content-center">
-                  <div className="col">
-                    <img
-                      src={layer6}
-                      alt="ims1"
-                      className="img-fluid mb-2 zoom-on-hover"
-                    />
-                  </div>
-                </div>
+            <div className="row justify-content-center pt-1 gap-5">
+              <div className="col-md-3 border shadow p-3 mb-5 bg-white rounded">
+                <img
+                  src={layer6}
+                  alt="ims1"
+                  className="img-fluid mb-2 zoom-on-hover"
+                />
                 <h6 className="fw-bold">
                   Hassle-free management of IT infrastructure
                 </h6>
-                <div className="card-text pb-2">
+                <p className="pb-2">
                   Total handholding throughout your IT transformation journey
-                </div>
-                <div className="card-text">
-                  Cost-effective and professional managed services
-                </div>
+                </p>
+                <p>Cost-effective and professional managed services</p>
               </div>
-              <div className="col-md-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded">
-                <div className="row justify-content-center">
-                  <div className="col">
-                    <img
-                      src={layer7}
-                      alt="ims2"
-                      className="img-fluid mb-2 zoom-on-hover"
-                    />
-                  </div>
-                </div>
+              <div className="col-md-3 border shadow p-3 mb-5 bg-white rounded">
+                <img
+                  src={layer7}
+                  alt="ims2"
+                  className="img-fluid mb-2 zoom-on-hover"
+                />
                 <h6 className="fw-bold">
                   Consultative approach with customized solutions
                 </h6>
@@ -166,16 +156,12 @@ const Home = () => {
                 </p>
                 <p>Cost-effective and professional managed services</p>
               </div>
-              <div className="col-md-3 p-3 card border-0 shadow p-3 mb-5 bg-white rounded mb-2">
-                <div className="row justify-content-center">
-                  <div className="col">
-                    <img
-                      src={layer8}
-                      alt="ims3"
-                      className="img-fluid mb-2 zoom-on-hover"
-                    />
-                  </div>
-                </div>
+              <div className="col-md-3 border shadow p-3 mb-5 bg-white rounded">
+                <img
+                  src={layer8}
+                  alt="ims3"
+                  className="img-fluid mb-2 zoom-on-hover"
+                />
                 <h6 className="fw-bold">
                   Boost your IT ROI and reduce technical debt
                 </h6>
@@ -192,7 +178,7 @@ const Home = () => {
       <section className="DevOps-section">
         <div className="container my-5">
           <div className="row text-center pb-4">
-            <h2 className="text-secondary pb-4">Skeletos DevOps</h2>
+            <h2 className="text-secondary pb-5">Skeletos DevOps</h2>
             <div className="col text-center">
               <h6>
                 Collaborative innovation & consistent delivery. DevOps is a
@@ -200,13 +186,19 @@ const Home = () => {
                 Delivery, and is represented with an infinity symbol denoting
                 that innovation is a journey and not a destination.
               </h6>
-              <p>
+              <p className="py-2">
                 Our Skeletos Pentagon Framework for DevOps helps you achieve the
                 five-point agenda of the modern enterprises.
               </p>
               <div className="row justify-content-center">
                 <div className="col-10 p-4">
-                  <img src={layer9} alt="devops" className="img-fluid" />
+                  <Link to="/devops">
+                    <img
+                      src={layer9}
+                      alt="devops"
+                      className="img-fluid zoom-on-hover"
+                    />
+                  </Link>
                 </div>
               </div>
               <p>
@@ -222,12 +214,12 @@ const Home = () => {
 
       <section className="Enterprise-Section">
         <div className="container my-5">
-          <div className="row text-center pb-4">
-            <h2 className="text-secondary pb-4">
+          <div className="row text-center pb-5">
+            <h2 className="text-secondary py-5">
               Enterprise Software Development
             </h2>
             <div className="col">
-              <h6>
+              <h6 className="py-3">
                 Skeletos understands that technology is just a tool. People buy
                 tools, but do not necessarily re-engineer the business cycle.
                 Our team of techno-functional engineers help you build
@@ -261,10 +253,10 @@ const Home = () => {
       <section className="Branding-web Solutions">
         <div className="container my-5">
           <div className="row text-center pb-4">
-            <h2 className="text-secondary pb-4">Branding & Web Solutions</h2>
+            <h2 className="text-secondary pb-5">Branding & Web Solutions</h2>
             <div className="col">
               <img src={layer12} alt="brandingImg" className="img-fluid" />
-              <h6>
+              <h6 className="py-3">
                 From Web Presence to Web Influence. Skeletos provides a perfect
                 platform to create market influence through its end-to-end
                 branding and web solutions. We adopt a top-down strategic
@@ -275,8 +267,8 @@ const Home = () => {
                 Customized Solutions with strategic approach & industry-specific
                 design strategy​
               </h5>
-              <div className="row py-4">
-                <div className="col-4">
+              <div className="row py-5">
+                <div className="col-md-4">
                   <Link
                     to="/software-development"
                     className="text-decoration-none text-dark"
@@ -289,7 +281,7 @@ const Home = () => {
                     <p>Web Consulting</p>
                   </Link>
                 </div>
-                <div className="col-4">
+                <div className="col-md-4">
                   <Link
                     to="/website-development"
                     className="text-decoration-none text-dark"
@@ -302,7 +294,7 @@ const Home = () => {
                     <p>Website Development</p>
                   </Link>
                 </div>
-                <div className="col-4">
+                <div className="col-md-4">
                   <Link
                     to="/ecommerce-development"
                     className="text-decoration-none text-dark"

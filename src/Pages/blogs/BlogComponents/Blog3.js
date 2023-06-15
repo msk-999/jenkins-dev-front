@@ -20,7 +20,7 @@ const Blog3 = () => {
         <div className="card-body">
           <Link to="/blogs/mobile_app_development" className="text-dark text-decoration-none">
             <h5>What is Mobile App Development?</h5>
-          </Link>
+          </Link> <br />
           <p className="card-text">
             Mobile App Development: A blog about the importance of mobile apps
             and their impact. The hot new trend of mobile apps has always been

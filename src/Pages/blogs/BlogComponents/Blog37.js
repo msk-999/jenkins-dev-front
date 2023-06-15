@@ -23,7 +23,7 @@ const Blog37 = () => {
             className="text-decoration-none text-dark"
           >
             <h5>What Web Applications do?</h5>
-          </Link>
+          </Link> <br />
           <p className="card-text">
             What Web Applications do? Discover Sucess Behind Growing
             Organisations Most business communication starts with the question

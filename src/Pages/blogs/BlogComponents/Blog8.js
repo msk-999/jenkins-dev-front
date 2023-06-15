@@ -29,7 +29,6 @@ const Blog8 = () => {
             blog about the benefits of bring your own device programs for
             businesses. Bring your own <br />
           </p>
-          <br />
           <Link
             to="/blogs/benefits-of-byod"
             className="text-decoration-none fw-bold text-success"

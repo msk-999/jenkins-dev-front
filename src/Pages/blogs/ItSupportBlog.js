@@ -39,13 +39,15 @@ import Blog36 from "./BlogComponents/Blog36";
 import Blog37 from "./BlogComponents/Blog37";
 import Blog38 from "./BlogComponents/Blog38";
 import { TabTitle } from "../../utils/GeneralFunctions";
+import Blog29 from "./BlogComponents/Blog29";
 
 const ItSupportBlog = () => {
   TabTitle("IT Support Blogs | | Skeletos IT Services");
   return (
     <div>
       <div className="container text-center my-5">
-        <div className="row align-items-center">
+        {/* **********HERO SECTION********** */}
+        <div className="row align-items-center py-4">
           <div className="col-md-6">
             <h3 className="fw-bold">Informative IT Blogs</h3>
           </div>
@@ -58,146 +60,233 @@ const ItSupportBlog = () => {
           </div>
         </div>
 
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog1 />
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog1 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog2 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog2 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog3 />
-          </div>
-        </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog4 />
-          </div>
-          <div className="col mx-2">
-            <Blog5 />
-          </div>
-          <div className="col mx-2">
-            <BLog6 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog3 />
+            </div>
           </div>
         </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog7 />
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog4 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog8 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog5 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog9 />
-          </div>
-        </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog10 />
-          </div>
-          <div className="col mx-2">
-            <Blog11 />
-          </div>
-          <div className="col mx-2">
-            <Blog12 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <BLog6 />
+            </div>
           </div>
         </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog13 />
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog7 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog14 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog8 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog15 />
-          </div>
-        </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog16 />
-          </div>
-          <div className="col mx-2">
-            <Blog17 />
-          </div>
-          <div className="col mx-2">
-            <Blog18 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog9 />
+            </div>
           </div>
         </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog19 />
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog10 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog20 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog11 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog21 />
-          </div>
-        </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog22 />
-          </div>
-          <div className="col mx-2">
-            <Blog23 />
-          </div>
-          <div className="col mx-2">
-            <Blog24 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog12 />
+            </div>
           </div>
         </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog25 />
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog13 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog26 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog14 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog27 />
-          </div>
-        </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog28 />
-          </div>
-          <div className="col mx-2">
-            <BLog29 />
-          </div>
-          <div className="col mx-2">
-            <Blog30 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog15 />
+            </div>
           </div>
         </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog31 />
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog16 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog32 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog17 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog33 />
-          </div>
-        </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog34 />
-          </div>
-          <div className="col mx-2">
-            <Blog35 />
-          </div>
-          <div className="col mx-2">
-            <Blog36 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog18 />
+            </div>
           </div>
         </div>
-        <div className="row justify-content-around text-start gy-3 py-4 ">
-          <div className="col mx-2">
-            <Blog37 />
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog19 />
+            </div>
           </div>
-          <div className="col mx-2">
-            <Blog38 />
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog20 />
+            </div>
           </div>
-          <div className="col mx-2"></div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog21 />
+            </div>
+          </div>
+        </div>
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog22 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog23 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog24 />
+            </div>
+          </div>
+        </div>
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog25 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog26 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog27 />
+            </div>
+          </div>
+        </div>
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog28 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog29 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog30 />
+            </div>
+          </div>
+        </div>
+        
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog31 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog32 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog33 />
+            </div>
+          </div>
+        </div>
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog34 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog35 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog36 />
+            </div>
+          </div>
+        </div>
+
+        <div className="row gy-3 py-4 align-items-stretch">
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog37 />
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-12">
+            <div className="d-flex flex-column h-100">
+              <Blog38 />
+            </div>
+          </div>
         </div>
       </div>
     </div>

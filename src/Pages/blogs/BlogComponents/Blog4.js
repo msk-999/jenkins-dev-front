@@ -30,7 +30,7 @@ const Blog4 = () => {
           <p className="card-text">
             Why You Need Datacenter Management Services: A blog that talks about
             the importance of managed services. Every business owner dreams of
-            owning their own physical data
+            owning their own
           </p>
           <Link
             to="/blogs/datacenter-management-services"

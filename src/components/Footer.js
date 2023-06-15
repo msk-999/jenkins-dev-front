@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import icon from "../img/Skeletos_icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const imageClasses = `rotate-effect img-fluid mr-3 ${
+    isHovered ? "rotate-effect" : ""
+  }`;
+
   return (
     <footer className="bg-light py-3">
       <hr />
@@ -18,8 +32,10 @@ const Footer = () => {
                 <Link to="/">
                   <img
                     src={icon}
-                    alt="Company Logo"
-                    className="img-fluid mr-3"
+                    alt="Rotating Image"
+                    className={imageClasses}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                   />
                 </Link>
               </div>

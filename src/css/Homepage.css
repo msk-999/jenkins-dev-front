@@ -6,3 +6,11 @@
 .zoom-on-hover:hover {
   transform: scale(1.1);
 }
+
+.rotate-effect {
+  transition: transform 1s;
+}
+
+.rotate-effect:hover {
+  transform: rotate(360deg);
+}

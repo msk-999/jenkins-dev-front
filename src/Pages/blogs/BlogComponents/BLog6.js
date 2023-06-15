@@ -33,7 +33,6 @@ const BLog6 = () => {
             about what BCP actually is along with why its important for
             businesses. If
           </p>{" "}
-          <br />
           <Link
             to="/blogs/what-is-business-continuity-plan"
             className="text-decoration-none fw-bold text-success"
