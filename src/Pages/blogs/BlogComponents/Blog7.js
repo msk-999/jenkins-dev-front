@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Layer1 from "../../../img/blogs/blog7.jpg";
+import "../../../css/Styles.css";
 
 const Blog7 = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
+  
   return (
     <div>
       <div className="card">
@@ -22,7 +43,11 @@ const Blog7 = () => {
             to="/blogs/why-custom-software-development"
             className="text-decoration-none text-dark"
           >
-            <h5>
+            <h5
+              className={`title ${isHovered2 ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+            >
               5 Reasons Why you should invest in Custom Software Development?
             </h5>
           </Link>
@@ -34,8 +59,13 @@ const Blog7 = () => {
             to="/blogs/why-custom-software-development"
             className="text-decoration-none fw-bold text-success"
           >
-            READ MORE {">"}
-            {">"}
+            <p
+              className={`text ${isHovered ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              READ MORE {">"} {">"}
+            </p>
           </Link>
         </div>
       </div>

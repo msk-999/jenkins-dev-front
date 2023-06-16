@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Layer1 from "../../../img/blogs/blog5.jpg";
+import "../../../css/Styles.css";
 
 const Blog5 = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
   return (
     <div>
       <div className="card">
@@ -22,7 +42,13 @@ const Blog5 = () => {
             to="/blogs/how-technology-can-improve-roi"
             className="text-decoration-none text-dark"
           >
-            <h5>How Technology can improve ROI ?</h5>
+            <h5
+              className={`title ${isHovered2 ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+            >
+              How Technology can improve ROI ?
+            </h5>
           </Link>
           <br />
           <p className="card-text">
@@ -35,8 +61,13 @@ const Blog5 = () => {
             to="/blogs/how-technology-can-improve-roi"
             className="text-decoration-none fw-bold text-success"
           >
-            READ MORE {">"}
-            {">"}
+            <p
+              className={`text ${isHovered ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              READ MORE {">"} {">"}
+            </p>
           </Link>
         </div>
       </div>

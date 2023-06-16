@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Layer1 from "../../../img/blogs/blog35.jpg";
 import { Link } from "react-router-dom";
+import "../../../css/Styles.css";
 
 const Blog35 = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
   return (
     <div>
       <div className="card">
@@ -22,7 +42,13 @@ const Blog35 = () => {
             to="/blogs/devops-it-blog"
             className="text-decoration-none text-dark"
           >
-            <h5>All You Want to Know About DevOps</h5>
+            <h5
+              className={`title ${isHovered2 ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+            >
+              All You Want to Know About DevOps
+            </h5>
           </Link>
           <p className="card-text">
             DevOps? What is DevOps? How This Technology is going to Enhance your
@@ -33,8 +59,13 @@ const Blog35 = () => {
             to="/blogs/devops-it-blog"
             className="text-decoration-none fw-bold text-success"
           >
-            READ MORE {">"}
-            {">"}
+            <p
+              className={`text ${isHovered ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              READ MORE {">"} {">"}
+            </p>
           </Link>
         </div>
       </div>

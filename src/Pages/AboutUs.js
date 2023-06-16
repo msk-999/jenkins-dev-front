@@ -8,6 +8,10 @@ import layer28 from "../img/KickStart.svg";
 import { TabTitle } from "../utils/GeneralFunctions";
 import { Link } from "react-router-dom";
 import Hiring from "../components/Hiring.json";
+import ContactUS from "../components/svg-img/contact-us.json";
+import Discussion from "../components/svg-img/discuss-and-learn.json";
+import Evaluate from "../components/svg-img/calculator.json";
+import Kickoff from "../components/svg-img/airplane-lottie.json";
 import Lottie from "lottie-react";
 
 const AboutUs = () => {
@@ -73,9 +77,9 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center py-5">
           <div className="col text-center">
-            <h3>Why You Should Hire Us?</h3>
+            <h3 className="mb-3">Why You Should Hire Us?</h3>
             <div
               className="d-flex justify-content-center"
               style={{ width: "100%" }}
@@ -108,7 +112,17 @@ const AboutUs = () => {
               <div className="col-md-3 mb-4 p-3">
                 <Link to="/contact" className="text-decoration-none text-dark">
                   <div className="shadow border rounded zoom-on-hover">
-                    <img src={layer25} alt="" className=" img-fluid" />
+                    <div
+                      className="d-flex justify-content-center"
+                      style={{ width: "100%" }}
+                    >
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ width: "50%" }}
+                      >
+                        <Lottie loop={true} animationData={ContactUS} />
+                      </div>
+                    </div>
                     <h6 className="py-2">Contact us</h6>
                     <p className="px-2">
                       Fill up the details and schedule a call from our experts.
@@ -121,7 +135,17 @@ const AboutUs = () => {
               <div className="col-md-3 mb-4 p-3">
                 <Link to="/contact" className="text-decoration-none text-dark">
                   <div className="shadow border rounded zoom-on-hover">
-                    <img src={layer26} alt="" className=" img-fluid" />
+                    <div
+                      className="d-flex justify-content-center"
+                      style={{ width: "100%" }}
+                    >
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ width: "50%" }}
+                      >
+                        <Lottie loop={true} animationData={Discussion} />
+                      </div>
+                    </div>
                     <h6 className="py-2">Discuss with Experts</h6>
                     <p className="px-2">
                       Discuss your project with our experts to understand and
@@ -133,7 +157,17 @@ const AboutUs = () => {
               <div className="col-md-3 mb-4 p-3">
                 <Link to="/contact" className="text-decoration-none text-dark">
                   <div className="shadow border rounded zoom-on-hover">
-                    <img src={layer27} alt="" className=" img-fluid" />
+                    <div
+                      className="d-flex justify-content-center"
+                      style={{ width: "100%" }}
+                    >
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ width: "50%" }}
+                      >
+                        <Lottie loop={true} animationData={Evaluate} />
+                      </div>
+                    </div>
                     <h6 className="py-2">Evaluate Cost</h6>
                     <p>
                       Based on the solutions, we will share a project proposal
@@ -146,7 +180,17 @@ const AboutUs = () => {
               <div className="col-md-3 mb-4 p-3">
                 <Link to="/contact" className="text-decoration-none text-dark">
                   <div className="shadow border rounded zoom-on-hover">
-                    <img src={layer28} alt="" className=" img-fluid" />
+                    <div
+                      className="d-flex justify-content-center"
+                      style={{ width: "100%" }}
+                    >
+                      <div
+                        className="d-flex align-items-center"
+                        style={{ width: "70%" }}
+                      >
+                        <Lottie loop={true} animationData={Kickoff} />
+                      </div>
+                    </div>
                     <h6 className="py-2">Kick-off project</h6>
                     <p className="px-2">
                       Once we sign the project, our experts will come together

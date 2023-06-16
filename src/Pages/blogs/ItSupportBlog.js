@@ -28,7 +28,7 @@ import Blog25 from "./BlogComponents/Blog25";
 import Blog26 from "./BlogComponents/Blog26";
 import Blog27 from "./BlogComponents/Blog27";
 import Blog28 from "./BlogComponents/Blog28";
-import BLog29 from "./BlogComponents/Blog29";
+import Blog29 from "./BlogComponents/Blog29";
 import Blog30 from "./BlogComponents/Blog30";
 import Blog31 from "./BlogComponents/Blog31";
 import Blog32 from "./BlogComponents/Blog32";
@@ -39,7 +39,6 @@ import Blog36 from "./BlogComponents/Blog36";
 import Blog37 from "./BlogComponents/Blog37";
 import Blog38 from "./BlogComponents/Blog38";
 import { TabTitle } from "../../utils/GeneralFunctions";
-import Blog29 from "./BlogComponents/Blog29";
 
 const ItSupportBlog = () => {
   TabTitle("IT Support Blogs | | Skeletos IT Services");
@@ -54,7 +53,7 @@ const ItSupportBlog = () => {
           <div className="col-md-6">
             <div className="row justify-content-center">
               <div className="col-10">
-                <img src={Layer1} alt="" className="img-fluid" />
+                <img src={Layer1} alt="" className="img-fluid zoom-on-hover" />
               </div>
             </div>
           </div>
@@ -239,7 +238,7 @@ const ItSupportBlog = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="row gy-3 py-4 align-items-stretch">
           <div className="col-lg-4 col-md-12">
             <div className="d-flex flex-column h-100">

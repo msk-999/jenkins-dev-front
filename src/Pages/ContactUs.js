@@ -12,6 +12,11 @@ import layer28 from "../img/KickStart.svg";
 import { Form, Button } from "react-bootstrap";
 import { API_ENDPOINT } from "../config";
 import { TabTitle } from "../utils/GeneralFunctions";
+import ContactUS from "../components/svg-img/contact-us.json";
+import Discussion from "../components/svg-img/discuss-and-learn.json";
+import Evaluate from "../components/svg-img/calculator.json";
+import Kickoff from "../components/svg-img/airplane-lottie.json";
+import Lottie from "lottie-react";
 
 const ContactUs = () => {
   TabTitle("Contact us | Skeletos");
@@ -66,7 +71,6 @@ const ContactUs = () => {
     setEmail("");
     setRequirements("");
   };
-
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -245,38 +249,86 @@ const ContactUs = () => {
         <div className="row">
           <div className="col text-center py-5">
             <h2 className="pb-3">GET STARTED TODAY WITH US</h2>
-            <div className="col">
-              <div className="row justify-content-around text-center gy-2">
-                <div className="col mx-2 border round">
-                  <img src={layer25} alt="" />
-                  <h6>Contact us</h6>
-                  <p>
-                    Fill up the details and Schedule call from our experts.
-                    Don't worry your data is safe with us
+            <div className="row justify-content-around text-center">
+              <div className="col-md-3 mb-4 p-3">
+                <div className="shadow border rounded zoom-on-hover">
+                  <div
+                    className="d-flex justify-content-center"
+                    style={{ width: "100%" }}
+                  >
+                    <div
+                      className="d-flex align-items-center"
+                      style={{ width: "50%" }}
+                    >
+                      <Lottie loop={true} animationData={ContactUS} />
+                    </div>
+                  </div>
+                  <h6 className="py-2">Contact us</h6>
+                  <p className="px-2">
+                    Fill up the details and schedule a call from our experts.
+                    Don't worry, your data is safe with us.
+                  </p>{" "}
+                  <br />
+                </div>
+              </div>
+              <div className="col-md-3 mb-4 p-3">
+                <div className="shadow border rounded zoom-on-hover">
+                  <div
+                    className="d-flex justify-content-center"
+                    style={{ width: "100%" }}
+                  >
+                    <div
+                      className="d-flex align-items-center"
+                      style={{ width: "50%" }}
+                    >
+                      <Lottie loop={true} animationData={Discussion} />
+                    </div>
+                  </div>
+                  <h6 className="py-2">Discuss with Experts</h6>
+                  <p className="px-2">
+                    Discuss your project with our experts to understand and get
+                    the best IT solutions to enhance your project.
                   </p>
                 </div>
-                <div className="col mx-2 border round">
-                  <img src={layer26} alt="" />
-                  <h6>Discuss with Experts</h6>
+              </div>
+              <div className="col-md-3 mb-4 p-3">
+                <div className="shadow border rounded zoom-on-hover">
+                  <div
+                    className="d-flex justify-content-center"
+                    style={{ width: "100%" }}
+                  >
+                    <div
+                      className="d-flex align-items-center"
+                      style={{ width: "50%" }}
+                    >
+                      <Lottie loop={true} animationData={Evaluate} />
+                    </div>
+                  </div>
+                  <h6 className="py-2">Evaluate Cost</h6>
                   <p>
-                    Discuss about project with our experts to understand and Get
-                    Best IT solution to enhance your project
-                  </p>
+                    Based on the solutions, we will share a project proposal
+                    with budget and time regulations.
+                  </p>{" "}
+                  <br />
                 </div>
-                <div className="col mx-2 border round">
-                  <img src={layer27} alt="" />
-                  <h6>Evaluate Cost</h6>
-                  <p>
-                    Based on solutions will share project proposal with budget
-                    and Time Regulation
-                  </p>
-                </div>
-                <div className="col mx-2 border round">
-                  <img src={layer28} alt="" />
-                  <h6>Kick-off project</h6>
-                  <p>
-                    Once we sing project. Experts will come together and Kick of
-                    projects with their expertise and discipline
+              </div>
+              <div className="col-md-3 mb-4 p-3">
+                <div className="shadow border rounded zoom-on-hover">
+                  <div
+                    className="d-flex justify-content-center"
+                    style={{ width: "100%" }}
+                  >
+                    <div
+                      className="d-flex align-items-center"
+                      style={{ width: "70%" }}
+                    >
+                      <Lottie loop={true} animationData={Kickoff} />
+                    </div>
+                  </div>
+                  <h6 className="py-2">Kick-off project</h6>
+                  <p className="px-2">
+                    Once we sign the project, our experts will come together and
+                    kick off the project with their expertise and discipline.
                   </p>
                 </div>
               </div>

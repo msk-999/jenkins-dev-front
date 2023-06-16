@@ -5,6 +5,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { TabTitle } from "../utils/GeneralFunctions";
+import "../css/Homepage.css"
 
 const Careers = () => {
   TabTitle("Careers | Skeletos");
@@ -23,7 +24,7 @@ const Careers = () => {
         <Row className="py-5 justify-content-center">
           <Row className="d-flex justify-content-center">
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Dot Net Developer"
                   expericence="Experience: 4+ years"
@@ -44,7 +45,7 @@ const Careers = () => {
             </Col>
 
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Cloud Architecture"
                   expericence="Experience: Any experience"
@@ -65,7 +66,7 @@ const Careers = () => {
             </Col>
 
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Scrum Master"
                   expericence="Experience: 6+ years"
@@ -88,7 +89,7 @@ const Careers = () => {
 
           <Row className="d-flex justify-content-center">
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Python & REST APIs"
                   expericence="Experience: 6-9 years"
@@ -108,7 +109,7 @@ const Careers = () => {
               </Card>
             </Col>
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Network Engineer"
                   expericence="Experience: 5+ years"
@@ -128,7 +129,7 @@ const Careers = () => {
               </Card>
             </Col>
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Service Desk Manager"
                   expericence="Experience: Any experience"
@@ -151,7 +152,7 @@ const Careers = () => {
 
           <Row className="d-flex justify-content-center">
             <Col xs={12} md={4}>
-              <Card className="mb-3 shadow p-2 text-center">
+              <Card className="mb-3 shadow p-2 text-center zoom-on-hover">
                 <JobRoles
                   title="Sales & Marketing Executive"
                   expericence="Experience: 5+ years"

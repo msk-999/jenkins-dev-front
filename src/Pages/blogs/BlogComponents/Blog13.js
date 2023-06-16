@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Layer1 from "../../../img/blogs/blog13.png";
+import "../../../css/Styles.css";
 
 const Blog13 = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
   return (
     <div>
       <div className="card">
@@ -22,7 +42,13 @@ const Blog13 = () => {
             to="/blogs/data-center-monitoring"
             className="text-decoration-none text-dark"
           >
-            <h5>Why Data Center Monitoring is Essential</h5>
+            <h5
+              className={`title ${isHovered2 ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+            >
+              Why Data Center Monitoring is Essential
+            </h5>
           </Link>
           <p className="card-text">
             Data Center Monitoring, What It Is And Why A Data Center Experienced
@@ -34,8 +60,13 @@ const Blog13 = () => {
             to="/blogs/data-center-monitoring"
             className="text-decoration-none fw-bold text-success"
           >
-            READ MORE {">"}
-            {">"}
+            <p
+              className={`text ${isHovered ? "hovered" : ""}`}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              READ MORE {">"} {">"}
+            </p>
           </Link>
         </div>
       </div>
