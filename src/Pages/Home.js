@@ -18,13 +18,21 @@ import layer14 from "../img/Rectangle 230.png";
 import layer16 from "../img/Rectangle 236.png";
 import { Link } from "react-router-dom";
 import { TabTitle } from "../utils/GeneralFunctions";
+import orbit from "../img/home/Orbit.png";
+import ellipse1 from "../img/home/Ellipse1.png";
+import ellipse2 from "../img/home/Ellipse2.png";
+import ellipse3 from "../img/home/Ellipse3.png";
+import ellipse4 from "../img/home/Ellipse4.png";
+import ellipse5 from "../img/home/Ellipse5.png";
+import ellipse6 from "../img/home/Ellipse6.png";
+import ellipse7 from "../img/home/Ellipse7.png";
 import "../css/Homepage.css";
 
 const Home = () => {
   TabTitle("Digital Solutions IT Services | Skeletos");
   return (
     <div className="landing-page my-3 justify-content-center">
-      <section className="hero-section">
+      <section className="hero-section py-5">
         <div className="container my-5">
           <div className="row pt-5">
             <div className="col-md-6 hero-content d-flex flex-column justify-content-center">
@@ -46,8 +54,78 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-md-6 hero-img text-end ">
-              <img src={heroImg} alt="Hero section" className="img-fluid" />
+            <div className=" col-md-6 hero-section text-end mt-5">
+              <div class="orbit">
+                <div class="center-image">
+                  <img src={orbit} alt="" className="img-fluid" />
+                </div>
+                <div class="orbit-images">
+                  <div class="orbit-image">
+                    <Link to="/datacenter-migration">
+                      <img
+                        src={ellipse1}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  <div class="orbit-image">
+                    <Link to="devops">
+                      <img
+                        src={ellipse2}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  <div class="orbit-image">
+                    <Link to="/ecommerce-development">
+                      <img
+                        src={ellipse3}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  <div class="orbit-image">
+                    <Link to="/cloud-solutions">
+                      <img
+                        src={ellipse4}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  <div class="orbit-image">
+                    <Link to="/software-development">
+                      <img
+                        src={ellipse5}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  <div class="orbit-image">
+                    <Link to="/website-development">
+                      <img
+                        src={ellipse6}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  <div class="orbit-image">
+                    <Link to="/managed-services">
+                      <img
+                        src={ellipse7}
+                        alt=""
+                        className="img-fluid zoom-on-hover"
+                      />
+                    </Link>
+                  </div>
+                  {/* <!-- Add the remaining orbit images --> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>
