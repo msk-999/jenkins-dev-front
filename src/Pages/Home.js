@@ -1,21 +1,21 @@
 import React from "react";
 import heroImg from "../img/hero.jpg";
-import layer1 from "../img/IP Protection Img.svg";
-import layer2 from "../img/Rectangle 235.svg";
-import layer3 from "../img/Business Community.svg";
-import layer4 from "../img/Technology Transformation.svg";
-import layer5 from "../img/Accessability.svg";
-import layer6 from "../img/ImsRectangle 237.svg";
-import layer7 from "../img/ImsRectangle 239.svg";
-import layer8 from "../img/ImsRectangle 238.svg";
+import layer1 from "../img/IP Protection Img.png";
+import layer2 from "../img/Rectangle 235.png";
+import layer3 from "../img/Business Community.png";
+import layer4 from "../img/Technology Transformation.png";
+import layer5 from "../img/Accessability.png";
+import layer6 from "../img/Rectangle 237.png";
+import layer7 from "../img/Rectangle 239.png";
+import layer8 from "../img/Rectangle 238.png";
 import layer9 from "../img/DevOps-Group.svg";
-import layer10 from "../img/Web Enterprise.svg";
-import layer11 from "../img/Mobile Enterprise.svg";
-import layer12 from "../img/Rectangle 228_brand.svg";
-import layer13 from "../img/brand1Rectangle 229.svg";
-import layer14 from "../img/brand2Rectangle 230.svg";
-import layer15 from "../img/brand3Rectangle 231.svg";
-import layer16 from "../img/Rectangle 236StaffAug.svg";
+import layer10 from "../img/Web Enterprise.png";
+import layer11 from "../img/Mobile Enterprise.png";
+import layer12 from "../img/Rectangle 228.png";
+import layer13 from "../img/Rectangle 229.png";
+import layer15 from "../img/Rectangle 231.png";
+import layer14 from "../img/Rectangle 230.png";
+import layer16 from "../img/Rectangle 236.png";
 import { Link } from "react-router-dom";
 import { TabTitle } from "../utils/GeneralFunctions";
 import "../css/Homepage.css";
@@ -228,7 +228,7 @@ const Home = () => {
                 applications, and enterprise integration platform.
               </h6>
               <div className="row">
-                <div className="col-6">
+                <div className="col-md-6">
                   <img
                     src={layer10}
                     alt="Web-encterprise"
@@ -236,7 +236,7 @@ const Home = () => {
                   />
                   <p>Web-based Enterprise Applications</p>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <img
                     src={layer11}
                     alt="Mobile-enterprise"

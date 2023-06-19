@@ -1,9 +1,9 @@
 import React from "react";
 import layer1 from "../../../img/blogs/NAC.jpg";
 import layer2 from "../../../img/blogs/Easy-NAC-300x138.png";
-import Component1 from "../../../components/Component1";
 import ShareThisPost from "../../../components/ShareThisPost";
 import { TabTitle } from "../../../utils/GeneralFunctions";
+import { Link } from "react-router-dom";
 
 const ChooseRightNac = () => {
   TabTitle(
@@ -51,22 +51,33 @@ const ChooseRightNac = () => {
             </p>
             <div className="col p-5">
               <p className="px-5 ">
-                According to a report by Gartner (Gartner | Delivering
-                Actionable, Objective Insight to Executives and Their Teams),
-                worldwide spending on information security products and services
-                reached $123.8 billion in 2020, an increase of 7.6% from the
-                previous year. The report also projects that spending on
-                information security will continue to grow, reaching $151.2
+                According to a report by Gartner{" "}
+                <a
+                  href="https://www.gartner.com/en"
+                  className="text-decoration-none"
+                >
+                  (Gartner | Delivering Actionable, Objective Insight to
+                  Executives and Their Teams)
+                </a>
+                , worldwide spending on information security products and
+                services reached $123.8 billion in 2020, an increase of 7.6%
+                from the previous year. The report also projects that spending
+                on information security will continue to grow, reaching $151.2
                 billion by 2023. <br />
                 <br />
-                Another report by Cybersecurity Ventures
-                (https://cybersecurityventures.com/) predicts that global
-                spending on cybersecurity products and services will exceed $1
-                trillion cumulatively from 2017 to 2021.
+                Another report by Cybersecurity Ventures{" "}
+                <a
+                  href="https://cybersecurityventures.com/"
+                  className="text-decoration-none"
+                >
+                  (https://cybersecurityventures.com/)
+                </a>{" "}
+                predicts that global spending on cybersecurity products and
+                services will exceed $1 trillion cumulatively from 2017 to 2021.
               </p>
             </div>
             <div className="col">
-              <div className="h5">
+              <div className="h5 text-danger">
                 But how many companies are actually spending on the “NAC”?
               </div>
               <figure>
@@ -78,14 +89,19 @@ const ChooseRightNac = () => {
                 <figcaption>“NAC (Network Access Control)”</figcaption>
               </figure>
               <p>
-                According to a report by MarketsandMarkets
-                (https://www.marketsandmarkets.com/), the global NAC market size
-                is expected to grow from $1.4 billion in 2020 to $4.7 billion by
-                2025, at a Compound Annual Growth Rate (CAGR) of 27.4% during
-                the forecast period. This growth is being driven by increasing
-                incidents of cyberattacks, strict regulations and compliance
-                requirements, and the need for better visibility and control
-                over network endpoints.
+                According to a report by MarketsandMarkets{" "}
+                <a
+                  href="https://www.marketsandmarkets.com/"
+                  className="text-decoration-none"
+                >
+                  (https://www.marketsandmarkets.com/)
+                </a>
+                , the global NAC market size is expected to grow from $1.4
+                billion in 2020 to $4.7 billion by 2025, at a Compound Annual
+                Growth Rate (CAGR) of 27.4% during the forecast period. This
+                growth is being driven by increasing incidents of cyberattacks,
+                strict regulations and compliance requirements, and the need for
+                better visibility and control over network endpoints.
               </p>
               <h6>
                 NAC (Network Access Control) implementation is important for
@@ -126,14 +142,20 @@ const ChooseRightNac = () => {
                 performance.
                 <br />
                 <br />
-                In a survey conducted by Spiceworks (Business and Industry News,
-                Analysis and Expert Insights – Spiceworks), a provider of IT
-                management software, it was found that 60% of small and
-                medium-sized businesses plan to increase their spending on
-                security solutions, including NAC, in 2021. Additionally, a
-                survey by ESG Research found that 74% of enterprise
-                organizations have implemented or plan to implement NAC
-                solutions in the next 12-24 months.
+                In a survey conducted by Spiceworks{" "}
+                <a
+                  href=" https://www.spiceworks.com/"
+                  className="text-decoration-none"
+                >
+                  (Business and Industry News, Analysis and Expert Insights –
+                  Spiceworks)
+                </a>
+                , a provider of IT management software, it was found that 60% of
+                small and medium-sized businesses plan to increase their
+                spending on security solutions, including NAC, in 2021.
+                Additionally, a survey by ESG Research found that 74% of
+                enterprise organizations have implemented or plan to implement
+                NAC solutions in the next 12-24 months.
                 <br />
                 <br />
                 These figures demonstrate that companies are recognizing the
@@ -144,36 +166,69 @@ const ChooseRightNac = () => {
               <ul>
                 The market is filled with NAC solutions;
                 <li>
-                  Cisco Identity Services Engine (Cisco Identity Services Engine
-                  (ISE) – Cisco)
+                  Cisco Identity Services Engine{" "}
+                  <a
+                    href="https://www.cisco.com/site/in/en/products/security/identity-services-engine/index.html"
+                    className="text-decoration-none text-info"
+                  >
+                    (Cisco Identity Services Engine (ISE) – Cisco)
+                  </a>
                 </li>
                 <li>
-                  Aruba ClearPass (Network security without compromise | Aruba
-                  (arubanetworks.com))
+                  Aruba ClearPass{" "}
+                  <a
+                    href="https://www.arubanetworks.com/connect-and-protect/?utm_source=google&utm_medium=paidsearch&utm_campaign=Aru_FY23_Q2_ESP_SDW_CORE_APJ_APJ_Connect_and_Protect_2023&utm_geo=global&gclid=Cj0KCQjwwtWgBhDhARIsAEMcxeDEDqltDZ1DaKfxDV2VTHFjbKLl1k9Gj-rmNzaouse5K7f5i-r_iZoaAi3uEALw_wcB"
+                    className="text-decoration-none text-info"
+                  >
+                    (Network security without compromise | Aruba
+                    (arubanetworks.com))
+                  </a>
                 </li>
                 <li>
-                  Forescout CounterACT (Network Access Control (NAC) –
-                  Forescout)
+                  Forescout CounterACT{" "}
+                  <a
+                    href="https://www.forescout.com/solutions/network-access-control/"
+                    className="text-decoration-none text-info"
+                  >
+                    (Network Access Control (NAC) – Forescout)
+                  </a>
                 </li>
                 <li>
-                  Pulse Policy Secure (Pulse Policy Secure |
-                  SecureAccessWorks.com)
+                  Pulse Policy Secure{" "}
+                  <a
+                    href="https://secureaccessworks.com/Pulse-Policy-Secure.asp"
+                    className="text-decoration-none text-info"
+                  >
+                    (Pulse Policy Secure | SecureAccessWorks.com)
+                  </a>
                 </li>
                 <li>
-                  Extreme Networks Control (Advanced Network Access Control
-                  Solutions – Extreme Networks)
+                  Extreme Networks Control{" "}
+                  <a
+                    href="https://www.extremenetworks.com/products/network-access-control/extremecontrol"
+                    className="text-decoration-none text-info"
+                  >
+                    (Advanced Network Access Control Solutions – Extreme
+                    Networks)
+                  </a>
                 </li>
               </ul>
-              <h6>
+              <h6 className="text-danger py-3">
                 All these tools come with a heavy on CapEx and managing those
                 needs an expert hand in a team.
               </h6>
               <figure>
                 <img src={layer2} alt="" />
-                <figcaption>This is the caption for the image.</figcaption>
+                <figcaption>‘EasyNAC’</figcaption>
               </figure>
               <p>
-                “EasyNAC“ (Easy NAC | Easy NAC Simple Network Access Control)
+                <span className="text-danger h6">“EasyNAC“</span>{" "}
+                <a
+                  href="https://easynac.com/"
+                  className="text-decoration-none text-info"
+                >
+                  (Easy NAC | Easy NAC Simple Network Access Control)
+                </a> {" "}
                 It’s a company that only focused on the NAC product. The product
                 comes with ease of installation in the existing production
                 network, hassle-free deployment in multi-branch setup, and as
@@ -192,7 +247,6 @@ const ChooseRightNac = () => {
                 Stay tuned… <br />
               </p>
             </div>
-            <Component1 />
           </div>
         </div>
       </div>

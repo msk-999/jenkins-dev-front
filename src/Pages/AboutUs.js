@@ -1,18 +1,10 @@
 import React, { useState } from "react";
 import mainLogo from "../img/Skeletos_icon.svg";
-import layer1 from "../img/whyHire.svg";
-import layer25 from "../img/ContactUs.svg";
-import layer26 from "../img/Discuss.svg";
-import layer27 from "../img/Evaluate.svg";
-import layer28 from "../img/KickStart.svg";
 import { TabTitle } from "../utils/GeneralFunctions";
 import { Link } from "react-router-dom";
-import Hiring from "../components/Hiring.json";
-import ContactUS from "../components/svg-img/contact-us.json";
-import Discussion from "../components/svg-img/discuss-and-learn.json";
-import Evaluate from "../components/svg-img/calculator.json";
-import Kickoff from "../components/svg-img/airplane-lottie.json";
+import Discussion from "../components/Hiring.json";
 import Lottie from "lottie-react";
+import GetStarted from "../components/GetStarted";
 
 const AboutUs = () => {
   TabTitle("About Us | Skeletos");
@@ -88,7 +80,7 @@ const AboutUs = () => {
                 className="d-flex align-items-center"
                 style={{ width: "50%" }}
               >
-                <Lottie loop={true} animationData={Hiring} />
+                <Lottie loop={true} animationData={Discussion} />
               </div>
             </div>
             <p>
@@ -105,104 +97,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col text-center py-5">
-            <h2 className="pb-3">GET STARTED TODAY WITH US</h2>
-            <div className="row justify-content-around text-center">
-              <div className="col-md-3 mb-4 p-3">
-                <Link to="/contact" className="text-decoration-none text-dark">
-                  <div className="shadow border rounded zoom-on-hover">
-                    <div
-                      className="d-flex justify-content-center"
-                      style={{ width: "100%" }}
-                    >
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ width: "50%" }}
-                      >
-                        <Lottie loop={true} animationData={ContactUS} />
-                      </div>
-                    </div>
-                    <h6 className="py-2">Contact us</h6>
-                    <p className="px-2">
-                      Fill up the details and schedule a call from our experts.
-                      Don't worry, your data is safe with us.
-                    </p>{" "}
-                    <br />
-                  </div>
-                </Link>
-              </div>
-              <div className="col-md-3 mb-4 p-3">
-                <Link to="/contact" className="text-decoration-none text-dark">
-                  <div className="shadow border rounded zoom-on-hover">
-                    <div
-                      className="d-flex justify-content-center"
-                      style={{ width: "100%" }}
-                    >
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ width: "50%" }}
-                      >
-                        <Lottie loop={true} animationData={Discussion} />
-                      </div>
-                    </div>
-                    <h6 className="py-2">Discuss with Experts</h6>
-                    <p className="px-2">
-                      Discuss your project with our experts to understand and
-                      get the best IT solutions to enhance your project.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-md-3 mb-4 p-3">
-                <Link to="/contact" className="text-decoration-none text-dark">
-                  <div className="shadow border rounded zoom-on-hover">
-                    <div
-                      className="d-flex justify-content-center"
-                      style={{ width: "100%" }}
-                    >
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ width: "50%" }}
-                      >
-                        <Lottie loop={true} animationData={Evaluate} />
-                      </div>
-                    </div>
-                    <h6 className="py-2">Evaluate Cost</h6>
-                    <p>
-                      Based on the solutions, we will share a project proposal
-                      with budget and time regulations.
-                    </p>{" "}
-                    <br />
-                  </div>
-                </Link>
-              </div>
-              <div className="col-md-3 mb-4 p-3">
-                <Link to="/contact" className="text-decoration-none text-dark">
-                  <div className="shadow border rounded zoom-on-hover">
-                    <div
-                      className="d-flex justify-content-center"
-                      style={{ width: "100%" }}
-                    >
-                      <div
-                        className="d-flex align-items-center"
-                        style={{ width: "70%" }}
-                      >
-                        <Lottie loop={true} animationData={Kickoff} />
-                      </div>
-                    </div>
-                    <h6 className="py-2">Kick-off project</h6>
-                    <p className="px-2">
-                      Once we sign the project, our experts will come together
-                      and kick off the project with their expertise and
-                      discipline.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <GetStarted />
       </div>
     </div>
   );

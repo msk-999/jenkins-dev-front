@@ -15,7 +15,7 @@ const Footer = () => {
     setIsHovered(false);
   };
 
-  const imageClasses = `rotate-effect img-fluid mr-3 ${
+  const imageClasses = `rotate-effect img-fluid mr-3 mb-3 ${
     isHovered ? "rotate-effect" : ""
   }`;
 
@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="row">
           {/* <h4 className="text-center fw-bold">Contact Us</h4> <br /> */}
           <br />
-          <div className="col-md-2">
+          <div className="col-md-2 col-sm-3 col-3">
             <div className="row justify-content-center">
               <div className="col-md-6">
                 <Link to="/">
@@ -36,6 +36,7 @@ const Footer = () => {
                     className={imageClasses}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
+                    style={{ maxWidth: "100%", height: "auto" }} // Added CSS styles
                   />
                 </Link>
               </div>
