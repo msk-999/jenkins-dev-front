@@ -50,67 +50,262 @@
   /* Set the desired styles for the orbit images */
 }
 
+.orbit-image {
+  /* Common styles here */
+  z-index: 1; /* Same z-index for all images */
+}
+
 /* Adjust the position and size of each orbit image */
-.orbit-image:nth-child(1) {
-  bottom: 73%;
-  right: 63%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (e.g., mobile devices) */
+  .orbit-image:nth-child(1) {
+    bottom: 51%;
+    right: 24%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    z-index: 7;
+  }
+
+  .orbit-image:nth-child(2) {
+    bottom: 55%;
+    right: 25%;
+    transform: translateX(-50%);
+    z-index: 6;
+    width: 70px;
+    height: 70px;
+  }
+
+  .orbit-image:nth-child(3) {
+    top: 47%;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 85px;
+    z-index: 5;
+  }
+
+  .orbit-image:nth-child(4) {
+    top: 42%;
+    right: 55%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    z-index: 4;
+  }
+
+  .orbit-image:nth-child(5) {
+    bottom: 40%;
+    left: 26%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+  }
+
+  .orbit-image:nth-child(6) {
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 90px;
+    height: 90px;
+  }
+
+  .orbit-image:nth-child(7) {
+    top: 45%;
+    right: 21%;
+    transform: translateX(-50%);
+    width: 105px;
+    height: 105px;
+    z-index: 1;
+  }
 }
 
-.orbit-image:nth-child(2) {
-  /* top: 90%;
-  left: 55%; */
-  bottom: 94%;
-  right: 31%;
-  transform: translateX(-50%);
-  z-index: 6;
-  width: 98px;
-  height: 98px;
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for screens with a width between 769px and 1024px (e.g., tablets) */
+  .orbit-image:nth-child(1) {
+    bottom: 73%;
+    right: 63%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+  }
+
+  .orbit-image:nth-child(2) {
+    bottom: 94%;
+    right: 31%;
+    transform: translateX(-50%);
+    z-index: 6;
+    width: 98px;
+    height: 98px;
+  }
+
+  .orbit-image:nth-child(3) {
+    top: 95%;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 125px;
+    z-index: 5;
+  }
+
+  .orbit-image:nth-child(4) {
+    top: 49%;
+    right: 58%;
+    transform: translateX(-50%);
+    width: 95px;
+    height: 95px;
+    z-index: 4;
+  }
+
+  .orbit-image:nth-child(5) {
+    bottom: 32%;
+    left: 71%;
+    transform: translateX(-50%);
+    width: 135px;
+    height: 135px;
+    z-index: 3;
+  }
+
+  .orbit-image:nth-child(6) {
+    top: 28%;
+    left: 63%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .orbit-image:nth-child(7) {
+    top: 7%;
+    right: 22%;
+    transform: translateX(-50%);
+    width: 168px;
+    height: 168px;
+    z-index: 1;
+  }
 }
 
-.orbit-image:nth-child(3) {
-  top: 95%;
-  left: 48%;
-  transform: translateX(-50%);
-  width: 125px;
-  height: 125px;
-  z-index: 5;
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for screens with a width between 1025px and 1440px (e.g., smaller desktops) */
+  .orbit-image:nth-child(1) {
+    top: 28%;
+    right: 27%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 75px;
+    z-index: 7;
+  }
+
+  .orbit-image:nth-child(2) {
+    bottom: 68%;
+    right: 35%;
+    transform: translateX(-50%);
+    z-index: 6;
+    width: 100px;
+    height: 100px;
+  }
+
+  .orbit-image:nth-child(3) {
+    top: 43%;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 135px;
+    height: 135px;
+    z-index: 5;
+  }
+
+  .orbit-image:nth-child(4) {
+    top: 35%;
+    right: 59%;
+    transform: translateX(-50%);
+    width: 95px;
+    height: 95px;
+    z-index: 4;
+  }
+
+  .orbit-image:nth-child(5) {
+    bottom: 28%;
+    left: 27%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .orbit-image:nth-child(6) {
+    top: 62%;
+    left: 53%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .orbit-image:nth-child(7) {
+    top: 36%;
+    right: 21%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 170px;
+    z-index: 1;
+  }
 }
 
-.orbit-image:nth-child(4) {
-  top: 49%;
-  right: 58%;
-  transform: translateX(-50%);
-  width: 95px;
-  height: 95px;
-  z-index: 4;
-}
+@media (min-width: 1441px) {
+  /* Styles for screens with a minimum width of 1441px (e.g., large desktops) */
+  .orbit-image:nth-child(1) {
+    bottom: 55%;
+    right: 26%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    z-index: 7;
+  }
 
-.orbit-image:nth-child(5) {
-  bottom: 32%;
-  left: 71%;
-  transform: translateX(-50%);
-  width: 135px;
-  height: 135px;
-  z-index: 3;
-}
+  .orbit-image:nth-child(2) {
+    bottom: 66%;
+    right: 35%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 110px;
+    z-index: 6;
+  }
 
-.orbit-image:nth-child(6) {
-  top: 28%;
-  left: 63%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
+  .orbit-image:nth-child(3) {
+    top: 51%;
+    left: 71%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 125px;
+    z-index: 5;
+  }
 
-.orbit-image:nth-child(7) {
-  top: 7%;
-  right: 22%;
-  transform: translateX(-50%);
-  width: 168px;
-  height: 168px;
-  z-index: 1;
-}
+  .orbit-image:nth-child(4) {
+    top: 55%;
+    right: 58%;
+    transform: translateX(-50%);
+    width: 105px;
+    height: 105px;
+    z-index: 4;
+  }
 
-/* Add styles for the remaining orbit images */
+  .orbit-image:nth-child(5) {
+    bottom: 51%;
+    left: 26%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .orbit-image:nth-child(6) {
+    top: 66%;
+    left: 49%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .orbit-image:nth-child(7) {
+    top: 36%;
+    right: 21%;
+    transform: translateX(-50%);
+    width: 197px;
+    height: 197px;
+    z-index: 1;
+  }
+}

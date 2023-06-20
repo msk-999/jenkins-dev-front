@@ -32,9 +32,9 @@ const Home = () => {
   TabTitle("Digital Solutions IT Services | Skeletos");
   return (
     <div className="landing-page my-3 justify-content-center">
-      <section className="hero-section py-5">
+      <section className="hero-section">
         <div className="container my-5">
-          <div className="row pt-5">
+          <div className="row vh-100">
             <div className="col-md-6 hero-content d-flex flex-column justify-content-center">
               <h2 className="pb-3">
                 A Framework of Digital Solutions for you, All under One Cloud at
