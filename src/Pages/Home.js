@@ -123,7 +123,6 @@ const Home = () => {
                       />
                     </Link>
                   </div>
-                  {/* <!-- Add the remaining orbit images --> */}
                 </div>
               </div>
             </div>
