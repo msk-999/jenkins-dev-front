@@ -38,6 +38,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    "compose:up": "npm run compose:up"    
   },
   "eslintConfig": {
     "extends": [
