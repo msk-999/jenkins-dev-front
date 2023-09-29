@@ -37,7 +37,7 @@ const Home = () => {
           <div className="row vh-100">
             <div className="col-md-6 hero-content d-flex flex-column justify-content-center">
               <h2 className="pb-3">
-                A Framework of Digital Solutions for you, All under One Cloud at
+                A Framework of Digital approach for you, All in One Cloud at
                 Skeletos
               </h2>
               <p className="py-3">
